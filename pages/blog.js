@@ -24,21 +24,15 @@ const description =
   'Ideas on software engineering, coding interviews, and building online businesses';
 
 const Blog = () => {
-  const [searchValue, setSearchValue] = useState('');
   const { colorMode } = useColorMode();
   const secondaryTextColor = {
     light: 'gray.700',
     dark: 'gray.400'
   };
 
-  const filteredBlogPosts = blogPosts
-    .sort(
-      (a, b) =>
-        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
-    )
-    .filter((frontMatter) =>
-      frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
-    );
+  const filteredBlogPosts = blogPosts.sort(
+    (a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+  );
 
   return (
     <>
@@ -73,16 +67,6 @@ const Blog = () => {
             <Text color={secondaryTextColor[colorMode]}>
               {`Here I share my personal thoughts on software engineering, coding interviews, and building online businesses.`}
             </Text>
-            <InputGroup my={4} mr={4} w="100%">
-              <Input
-                aria-label="Search articles"
-                onChange={(e) => setSearchValue(e.target.value)}
-                placeholder="Search articles"
-              />
-              <InputRightElement>
-                <Icon name="search" color="gray.300" />
-              </InputRightElement>
-            </InputGroup>
           </Flex>
           <Flex
             flexDirection="column"
