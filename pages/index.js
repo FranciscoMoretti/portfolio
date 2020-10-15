@@ -2,7 +2,6 @@ import React from 'react';
 import { useColorMode, Heading, Text, Flex, Stack } from '@chakra-ui/core';
 
 import Container from '../components/Container';
-import Subscribe from '../components/Subscribe';
 import ProjectCard from '../components/ProjectCard';
 
 const Index = () => {
@@ -52,7 +51,6 @@ const Index = () => {
             icon="voliner"
           />
         </Flex>
-        <Subscribe />
       </Stack>
     </Container>
   );
