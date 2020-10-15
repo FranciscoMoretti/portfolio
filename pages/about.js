@@ -55,23 +55,16 @@ const About = () => {
               About Me
             </Heading>
             <Text color={secondaryTextColor[colorMode]} mb={4}>
-              Hi there! 👋 My name is Anton Fenske. I'm a software engineer and
-              an online entrepreneur.
+              Hi there! 👋 My name is Francisco Moretti. I'm a software
+              developer, electronic engineer and robotist.
             </Text>
             <Text color={secondaryTextColor[colorMode]} mb={4}>
               These days I work on{' '}
-              <Link href="https://devskills.co" color="blue.500">
-                <b>DevSkills</b>
+              <Link href="https://irobot.com" color="blue.500">
+                <b>iRobot</b>
               </Link>{' '}
-              to make sense of coding interviews.
-            </Text>
-            <Text color={secondaryTextColor[colorMode]} mb={4}>
-              I'm building it in public, documenting the journey on my Twitter.
-              Don't hesitate to{' '}
-              <Link href="https://twitter.com/fenskexyz" color="blue.500">
-                <b>follow me</b>
-              </Link>{' '}
-              there.
+              building cool products at one of the largest consumer robots
+              companies in the world.
             </Text>
           </Flex>
         </Stack>
