@@ -43,13 +43,13 @@ const Index = () => {
           maxWidth="700px"
         >
           <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
-            My work
+            Projects
           </Heading>
           <ProjectCard
-            title="DevSkills"
-            description="Pragmatic coding interview for evaluating technical skills."
-            href="https://devskills.co/"
-            icon="devskills"
+            title="Voliner"
+            description="Development, and implementation of flywheel energy storage system with applications to a smart grid."
+            href="blog/voliner"
+            icon="voliner"
           />
         </Flex>
         <Subscribe />
