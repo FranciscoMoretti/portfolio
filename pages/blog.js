@@ -19,9 +19,9 @@ import BlogPost from '../components/BlogPost';
 import { frontMatter as blogPosts } from './blog/**/*.mdx';
 
 const url = 'https://fenske.xyz/blog';
-const title = 'Blog – Anton Fenske';
+const title = 'Blog – Francisco Moretti';
 const description =
-  'Ideas on software engineering, coding interviews, and building online businesses';
+  'Projects and experiences of software engineering, electronics and robotics';
 
 const Blog = () => {
   const { colorMode } = useColorMode();
@@ -65,7 +65,14 @@ const Blog = () => {
               Blog
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
-              {`Here I share my personal thoughts on software engineering, coding interviews, and building online businesses.`}
+              {`I've started writting online in 2020. Here I share my experiences and projects about 
+              software develoment, robotics and electronics.`}
+            </Text>
+            <Text color={secondaryTextColor[colorMode]}>
+              {`I've only written ${blogPosts.length} article${
+                blogPosts.length > 1 ? 's' : ''
+              } 
+              on this site, this is only the beggining!`}
             </Text>
           </Flex>
           <Flex
