@@ -3,6 +3,8 @@ const mdxPrism = require('mdx-prism');
 const withMdxEnhanced = require('next-mdx-enhanced');
 
 module.exports = withMdxEnhanced({
+  // Target must be serverless
+  target: 'serverless',
   layoutPath: 'layouts',
   defaultLayout: true,
   remarkPlugins: [
