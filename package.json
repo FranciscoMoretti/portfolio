@@ -15,8 +15,6 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "export": "next export",
-    "deploy": "npm run build && npm run export",
     "lint": "eslint . --ext .json --ext .js",
     "prettier": "prettier --write \"**/*.{html,js,json,md,mdx,yml}\"",
     "start": "next start",
