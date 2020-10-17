@@ -11,7 +11,14 @@ const SEO = {
     url: 'https://franciscomoretti.vercel.app/',
     title,
     description,
-    images: []
+    images: [
+      {
+        url: 'https://franciscomoretti.vercel.app/static/images/og.jpg',
+        alt: title,
+        width: 1280,
+        height: 720
+      }
+    ]
   }
 };
 
