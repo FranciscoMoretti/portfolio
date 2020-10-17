@@ -84,7 +84,11 @@ export default (frontMatter) => {
             </Flex>
           </Flex>
           {children}
-          <Box mt={12} />
+          <Box mt={12}>
+            <Link href={editUrl(slug)} isExternal>
+              {'Edit on GitHub'}
+            </Link>
+          </Box>
           <IframeResizer
             mt={10}
             checkOrigin={false}
