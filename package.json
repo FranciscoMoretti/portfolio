@@ -1,16 +1,16 @@
 {
-  "name": "fenske.xyz",
+  "name": "franciscomoretti.vercel.app",
   "description": "My personal website.",
   "version": "0.0.0",
   "author": {
-    "name": "Anton Fenske",
-    "email": "anton@fenske.xyz",
-    "url": "https://fenske.xyz"
+    "name": "Francisco Moretti",
+    "email": "franciscoemoretti@gmail.com",
+    "url": "https://franciscomoretti.vercel.app"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fenske/fenske.xyz"
+    "url": "git+https://github.com/FranciscoMoretti/portfolio"
   },
   "scripts": {
     "build": "next build",

@@ -1,22 +1,17 @@
-const title = 'Anton Fenske';
+const title = 'Francisco Moretti';
 const description = 'Making things happen.';
 
 const SEO = {
   title,
   description,
-  canonical: 'https://fenske.xyz',
+  canonical: 'https://franciscomoretti.vercel.app/',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://fenske.xyz',
+    url: 'https://franciscomoretti.vercel.app/',
     title,
     description,
     images: []
-  },
-  twitter: {
-    handle: '@fenskexyz',
-    site: '@fenskexyz',
-    cardType: 'summary_large_image'
   }
 };
 

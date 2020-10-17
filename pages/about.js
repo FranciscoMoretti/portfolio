@@ -12,8 +12,8 @@ import {
 
 import Container from '../components/Container';
 
-const url = 'https://fenske.xyz/about';
-const title = 'About Me – Anton Fenske';
+const url = 'https://franciscomoretti.vercel.app/about';
+const title = 'About Me – Francisco Moretti';
 
 const About = () => {
   const { colorMode } = useColorMode();

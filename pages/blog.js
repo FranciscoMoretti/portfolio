@@ -18,7 +18,7 @@ import BlogPost from '../components/BlogPost';
 // eslint-disable-next-line import/no-unresolved, import/extensions
 import { frontMatter as blogPosts } from './blog/**/*.mdx';
 
-const url = 'https://fenske.xyz/blog';
+const url = 'https://franciscomoretti.vercel.app/blog';
 const title = 'Blog – Francisco Moretti';
 const description =
   'Projects and experiences of software engineering, electronics and robotics';

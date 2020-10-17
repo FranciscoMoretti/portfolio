@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://fenskex.xyz/sitemap.xml
+Sitemap: https://franciscomoretti.vercel.app/sitemap.xml

@@ -1,4 +1,4 @@
-# fenske.xyz
+# Portfolio
 
 ## Overview
 
@@ -7,8 +7,8 @@ Welcome to the repo!
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/fenske/fenske.xyz.git
-$ cd fenske.xyz
+$ git clone https://github.com/FranciscoMoretti/portfolio.git
+$ cd portfolio
 $ yarn
 $ yarn dev
 ```
