@@ -8,4 +8,5 @@ public/sitemap.xml
 .now
 .env
 .vercel
+.vscode
 out
