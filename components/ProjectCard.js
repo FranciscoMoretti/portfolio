@@ -48,7 +48,7 @@ const ProjectCard = ({ title, description, href, icon }) => {
         />
         <Stack>
           <Heading
-            as="h4"
+            as="h3"
             size="md"
             fontWeight="bold"
             mb={4}
