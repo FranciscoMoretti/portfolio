@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex, Link, IconButton, Stack, Text, Button } from '@chakra-ui/core';
 
-const Footer = () => (
+const Footer = ({ color }) => (
   <Stack>
     <Flex justify="center" mb={4}>
       <Link
@@ -13,7 +13,7 @@ const Footer = () => (
           aria-label="GitHub"
           icon="github"
           size="lg"
-          color="gray.500"
+          color={color}
           variant="ghost"
         />
       </Link>
@@ -26,7 +26,7 @@ const Footer = () => (
           aria-label="LinkedIn"
           icon="linkedin"
           size="lg"
-          color="gray.500"
+          color={color}
           variant="ghost"
         />
       </Link>
@@ -35,7 +35,7 @@ const Footer = () => (
           aria-label="Email"
           icon="mail"
           size="lg"
-          color="gray.500"
+          color={color}
           variant="ghost"
         />
       </Link>
@@ -45,7 +45,7 @@ const Footer = () => (
         href="https://github.com/leerob/leerob.io"
         title="leerob"
         isExternal
-        color={'gray.500'}
+        color={color}
       >
         The backbone of this site is a fork of leerob.io built by @leeerob.
       </Link>

@@ -76,7 +76,7 @@ const Container = ({ children }) => {
         px={8}
       >
         {children}
-        <Footer />
+        <Footer color={primarytextColor[colorMode]} />
       </Flex>
     </>
   );
