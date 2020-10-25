@@ -1,8 +1,23 @@
 const readingTime = require('reading-time');
 const mdxPrism = require('mdx-prism');
 const withMdxEnhanced = require('next-mdx-enhanced');
+const withPlugins = require('next-compose-plugins');
 
-module.exports = withMdxEnhanced({
+// next.js configuration
+const nextConfig = {
+  experimental: {
+    modern: true
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require('./scripts/generate-sitemap');
+    }
+
+    return config;
+  }
+};
+
+const mdxConfig = {
   layoutPath: 'layouts',
   defaultLayout: true,
   remarkPlugins: [
@@ -18,15 +33,6 @@ module.exports = withMdxEnhanced({
       readingTime: readingTime(mdxContent)
     })
   }
-})({
-  experimental: {
-    modern: true
-  },
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      require('./scripts/generate-sitemap');
-    }
+};
 
-    return config;
-  }
-});
+module.exports = withPlugins([withMdxEnhanced(mdxConfig)], nextConfig);
