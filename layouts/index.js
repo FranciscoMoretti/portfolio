@@ -67,7 +67,7 @@ export default (frontMatter) => {
                 <Avatar
                   size="xs"
                   name="Francisco Moretti"
-                  src="https://www.gravatar.com/avatar/8c8c82d351321c2cff102c003a2adda5"
+                  src="https://www.gravatar.com/avatar/8c8c82d351321c2cff102c003a2adda5?s=24"
                   mr={2}
                 />
                 <Text fontSize="sm" color={textColor[colorMode]}>
