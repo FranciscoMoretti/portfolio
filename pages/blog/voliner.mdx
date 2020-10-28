@@ -8,8 +8,8 @@ image: '/static/images/voliner/complete-render.png'
 ![SolidWorks model render](/static/images/voliner/complete-render-700.png)
 
 **Welcome!** This is my first blog post and I've found it to be the perfect
-oportunity to share my _final year university project_.
-**Voliner** is a name that came up by joining the spanish words
+opportunity to share my _final year university project_.
+**Voliner** is a name that came up by joining the Spanish words
 _"Volante"_ (_flywheel_) and _"Inercia"_ (_inertia_). This project consists of
 the **Development and implementation of an inertia
 flywheel-based energy storage system with applications in a smart power grid**.
@@ -18,7 +18,7 @@ _I hope you like it!_
 ### Project scope:
 
 - Creation of a full flywheel energy storage system
-- Desgin the mechanical assembly
+- Design of the mechanical assembly
 - Construction of a 3-phase AC-DC bidirectional electronic converter
 - Implementation of software for the control system and bidirectional AC-DC conversion
 - Development of a control strategy to stabilize voltage fluctuations
@@ -34,11 +34,11 @@ three classic characteristics of interconnected systems:
 
 - Unidirectionality of the power flow (from generation centers to consumers)
 - Centralization of their management
-- Generation based only on demand requirements
+- Generation based only on-demand requirements
 
 **In order not to waste the available renewable energy,
 excess generation must be injected into the system and/or stored until
-required**, which requires multidirectionality in the flow of power and
+required**, which requires multidirectional flow of power and
 decentralized management, located in each network and planned according
 to predictions of production and energy consumption.
 This **requires real-time control systems to compensate for discrepancies** between
@@ -54,22 +54,22 @@ potential way to address these challenges.
 
 ## Summary
 
-The work carried out is part of a project to expand the faculty's
+The work carried out is part of a project to expand the university's
 intelligent micro-grid, which aims to obtain hybrid energy storage
-for it. The energy storage solution desgined has **three main components**:
+for it. The energy storage solution designed has **three main components**:
 
 - A **flywheel** (mechanical device to store kinetic energy)
 - A three-phase **induction machine**
 - A two-way **AC-DC electronic converter**
 
-oIts function is to **stabilize the DC bus voltage
-of the network**, suppressing the medium and high frequency components of
+Its function is to **stabilize the DC bus voltage
+of the network**, suppressing both the medium frequency and high frequency components of
 the currents circulating through the battery bank, protecting the batteries
 health and improving the overall operation of the network.
 
-> It’s referred as **induction machine** and not induction motor
-> because it operates as an **motor** (storing energy)
-> or as a **generator** (releasing energy) depending on circumstances.
+> We’ll use the term **induction machine** and not induction motor
+> because it operates as a **motor** (storing energy)
+> or as a **generator** (returning stored energy) depending on circumstances.
 
 The converter's control
 strategies are implemented in a Texas Instruments F28335 DSP, programmed
@@ -79,9 +79,9 @@ in C language.
 
 ## Introduction
 
-To increase the reliability and quality of the energy resource in a REI
-it needs energy storage. The devices to achieve it can be divided in
-in the following cattegories.
+To increase the reliability and quality of the energy resource in a smart grid
+energy storage is needed. The devices to achieve it can be divided in
+the following categories.
 
 - **Conventional:** battery banks, capacitors
 - **Unconventional:** reversible hydroelectric plants, hydrogen-based energy storage systems
@@ -104,7 +104,7 @@ of the current of the storage devices:
 - Medium frequency <-> FESS
 - High frequency <-> capacitors in the DC bus.
 
-> Since the whole system is connected by a DC bus, we can assosiate
+> Since the whole system is connected by a DC bus, we can assoiate
 > currents with power (_P=IxV_ where _V_ is constant)
 
 The following figure shows a **graphical representation of the resulting
@@ -113,8 +113,8 @@ create the control strategy:
 
 ![Grid model](/static/images/voliner/introduction.svg)
 
-Hybrid energy storage resulting from the combination of battery bank
-and FESS is a solution that combines the best of both worlds!
+Hybrid energy storage resulting from the combination of a battery bank
+and a FESS is a solution that combines the _best of both worlds!_
 
 import ProsCard from '../../components/ProsCard';
 import ConsCard from '../../components/ConsCard';
@@ -142,7 +142,7 @@ The characteristics of both storage devices complement
 each other. **The presence of the FESS and capacitors allow both the
 voltage of the DC bus and the battery current to evolve smoothly
 towards a new regime value**, not only **increasing battery life** but also
-**improving the overall operation of the REI**.
+**improving the overall operation of the smart grid**.
 
 > If the duration of the
 > disturbance is short enough, all energy is delivered or received by
@@ -155,11 +155,11 @@ An inertia flywheel-based energy storage system (FESS) consists of the
 use of a _rotating_ element to store **kinetic energy**. This element is
 coupled with the shaft of an _electrical machine_ that works as a
 transformer between the _electrical_ and _mechanical_ domains. The electrical
-machine can work as a _generator_ or a _motor_ in following situations:
+machine can work as a _generator_ or a _motor_ in the following situations:
 
-- **Motor:** Increase it's _kinetic energy_ by accelerating the rotating element
+- **Motor:** Increase its _kinetic energy_ by accelerating the rotating element
   taking _electric energy_ from the grid.
-- **Generator:** Decrease it's _kinetic energy_ by slowing down the rotating element
+- **Generator:** Decrease its _kinetic energy_ by slowing down the rotating element
   delivering _electric energy_ from the grid.
 
 Normally the speeds at which the high axis rotates are high (20000-50000 rpm)
@@ -169,7 +169,7 @@ turning speed. In addition, to decrease friction losses the rotating
 element is usually placed in a vacuum chamber, with the shaft upright
 and levitating magnetically. **This development consists of small-scale
 FESS construction and control, for teaching and experimental purposes**,
-so it will not have the latter and it’s rotational speed it’s going to
+so it will not have the latter and the rotational speed it’s going to
 be lower. While its characteristics and dimensions are not the same as
 that of a FESS for higher power applications, **it's a device that serves
 well to research both energy management strategies and induction
@@ -186,8 +186,8 @@ _1.1KW_ _three-phase induction machine_ and a _2KVA_ _AC-DC bidirectional
 converter_.
 
 **The converter can operate as a _three-phase inverter_ or
-_three-phase rectifier_**. It is based on the
-_Mitsubishi PS21A79_ integrated circuit that encapsulates
+_three-phase rectifier_**. It is based on the integrated circuit
+_Mitsubishi PS21A79_ that encapsulates
 the _three-phase IGBTs bridge_
 with their respective drivers and protections, and _Texas Instruments
 F28335 DSP_ where control strategies are implemented.
@@ -200,9 +200,8 @@ F28335 DSP_ where control strategies are implemented.
 
 **The control strategy implemented is an adaptation of**
 [An Innovative Control Strategy of a Single Converter for Hybrid Fuel Cell/Supercapacitor Power Source](https://ieeexplore.ieee.org/document/5422652).
-That proposes a way to eliminate the medium and high frequency currents of a _Fuel
-cell_ using a _bank of supercapacitors_ that deliver and absorb energy
-in a controlled manner. For this variant **instead of the _fuel cell_ a _battery bank_
+That proposes a way to decouple currents in the frequency domain for a _Fuel
+cell_ and a _bank of supercapacitors_. For this variant **instead of the _fuel cell_ a _battery bank_
 is used and the place of the _supercapacitor bank_
 is occupied by the _flywheel_**
 (and the capacitors in the DC bus).
@@ -223,7 +222,7 @@ topology, which is reduced to a number of nested PID controllers.
     if you want to increase the voltage of the DC bus
     you get power at the wheel by applying a negative torque (or a negative
     quadrature current).
-  - For **complementary system operation** (boot, shutdown
+  - For **complementary system operation** (start up, shutdown
     and limitations) the isq setpoint is generated by the **speed control**
     controller.
 - The **voltage regulator** reference is driven by the
@@ -244,12 +243,12 @@ topology, which is reduced to a number of nested PID controllers.
 
 **Steps and pulses** of 4A load current were performed using a _resistor bank_
 to _verify the correct operation_ of the designed FESS.
-The results obtained in each test are compacted into a figure showing:
+The results obtained in each test are compacted into a figure that shows:
 
 - Components of the **stator current in the dq frame** with their respective
   _setpoints_.
 - **DC-side currents of the converter**, particularly the current by the
-  _battery_ (ibat), the current by the _charge_ (iload) and the current
+  _battery_ (ibat), the current by the _charge_ (iload), and the current
   delivered/absorbed by the _converter_ (i_FW).
 - **DC bus voltage** (Vdc), its _setpoint_ (VdcRefb) and _voltage
   evolution with FESS disabled_ (natural). It should be noted
@@ -267,7 +266,7 @@ We begin by analyzing the **system response to a 4A load step**.
    of isq is reflected in iFW which implies that the charging current
    flank is delivered by the FESS and not by the batteries.
 3. The currents isq and iFW then evolve smoothly towards their resting value.
-4. The iFW currentflank and its slow extinction results in a smooth
+4. The iFW current flank and its slow extinction results in a smooth
    evolution of the battery current and voltage of the DC bus towards
    its new regime values.
    It's observed that **the voltage evolution is
@@ -277,8 +276,8 @@ We begin by analyzing the **system response to a 4A load step**.
 
 ### Pulse test
 
-Let's analyse now the **system response to a 4A load pulse of
-300ms duration**. It can b the FESS does not completely eliminate the
+Let's analyze now the **system response to a 4A load pulse of
+300ms duration**. The FESS does not completely eliminate the
 disturbance, but **reduces the amplitude of battery current
 and DC bus voltage variations by approximately 75%**.
 
@@ -301,12 +300,12 @@ and DC bus voltage variations by approximately 75%**.
   and in the _voltage of the DC bus_. As a result, when there are abrupt
   changes in the smart grid load, these variables evolve smoothly towards
   their new regime value, **improving battery life and overall operation of
-  the REI**.
+  the smart grid**.
 - The **FESS has a limitation in its _system response time_**.
   It cannot act fully in the first milliseconds after a disturbance. The
   response time is formed by the combination of the _electrical constant of
-  the induction machine currents_ found in the inner most internal control
-  loop and by the _control structure itself_. **Adding capacitors is an efffective
+  the induction machine currents_ found in the most internal control
+  loop and by the _control structure itself_. **Adding capacitors is an effective
   way to compensate this**.
 
   > The voltage disturbance
@@ -318,18 +317,19 @@ and DC bus voltage variations by approximately 75%**.
   > loops and even _instability_.
 
 - The broad **DC bus voltage range** (240V-300V) introduced an additional
-  degree of _complexity_, because the _dynamics_ of the system depend on the
-  value of that voltage. As a result, _PID regulators_ had to be adapted to
+  degree of _complexity_ the system _dynamics_ depends on the voltage
+  value. As a result, _PID regulators_ had to be adapted to
   perform properly across the smart grid _operating range_. The variation
   of this voltage also conditions the ability of the isd and isq current
-  regulators to act, which results in a _limitation of the incoming or outgoing
-  power of the system_ (rembember that P=VxI).
+  regulators to act, which results in a _limitation in the
+  system power capacity_ (remember that P=VxI).
 - The _self-discharge_ of the constructed FESS is much _greater_ than that
   of its _commercial equivalents_ because those have several constructive
   advantages, the main ones being _magnetic levitation_ (which significantly
   reduces the losses present in the motor shaft bearings) and the _vacuum
-  environment_ (which eliminates friction with air). This difference _doesn't
-  significantly impact system dynamics_, so the **results obtained are valid
+  environment_ (which eliminates friction with air). This difference _doesn’t
+  have a significant impact in the system dynamics_,
+  so the **results obtained are valid
   and scalable to commercial FESS**. However, this has an impact on the
   energy consumption needed to keep the flywheel spinning at stand-by
   speed.
