@@ -56,7 +56,7 @@ const About = () => {
             </Heading>
             <Text color={secondaryTextColor[colorMode]} mb={4}>
               Hi there! 👋 My name is Francisco Moretti. I'm a software
-              developer, electronic engineer and robotist.
+              developer, electronic engineer and roboticist.
             </Text>
             <Text color={secondaryTextColor[colorMode]} mb={4}>
               These days I work on{' '}
