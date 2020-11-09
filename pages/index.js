@@ -31,8 +31,9 @@ const Index = () => {
             Hi, I'm Francisco Moretti.
           </Heading>
           <Text color={secondaryTextColor[colorMode]}>
-            I'm a software engineer. You’ve found my personal slice of the
-            internet – everything you want to know and more is here.
+            I'm a software developer, electronic engineer and roboticist. You’ve
+            found my personal slice of the internet – everything you want to
+            know and more is here.
           </Text>
         </Flex>
         <Flex

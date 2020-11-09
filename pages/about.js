@@ -63,8 +63,14 @@ const About = () => {
               <Link href="https://irobot.com" color="blue.500">
                 <b>iRobot</b>
               </Link>{' '}
-              building cool products at one of the largest consumer robots
-              companies in the world.
+              working on the next generation of products that will live in
+              millions of homes all across the world. My expertise combines
+              electronics, automation software, and several components of robot
+              software, including sensors drivers and integrations, complex
+              behaviors, path-planning, and mapping algorithms. I enjoy finding
+              creative solutions to problems that are challenging and have great
+              impact. My passion for learning, helped me thrive working in a
+              wide variety of fields.
             </Text>
           </Flex>
         </Stack>
