@@ -2,11 +2,10 @@
 .DS_Store
 .next
 node_modules
-.env.*
 public/sitemap.xml
-.mdx-data
-.now
-.env
+public/feed.xml
 .vercel
-.vscode
-out
+.env
+
+# Contentlayer
+.contentlayer
