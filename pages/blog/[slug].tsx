@@ -19,14 +19,14 @@ export default function Blog({ post, tweets }: { post: Blog; tweets: any[] }) {
 
   return (
     <BlogLayout post={post}>
-      {/* <Component
+      <Component
         components={
           {
-            ...components,
-            StaticTweet
+            ...components
+            // StaticTweet
           } as any
         }
-      /> */}
+      />
     </BlogLayout>
   );
 }
