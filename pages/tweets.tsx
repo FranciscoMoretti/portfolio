@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Tweet from 'components/Tweet';
-import { getTweets } from 'lib/twitter';
+// import { getTweets } from 'lib/twitter';
 
 export default function Tweets({ tweets }) {
   return (
@@ -17,9 +17,9 @@ export default function Tweets({ tweets }) {
           bit, so I wanted a place to publicly share what inspires me, makes me
           laugh, and makes me think.
         </p>
-        {tweets.map((tweet) => (
+        {/* {tweets.map((tweet) => (
           <Tweet key={tweet.id} {...tweet} />
-        ))}
+        ))} */}
       </div>
     </Container>
   );

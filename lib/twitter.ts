@@ -26,6 +26,10 @@ export const getTweets = async (ids) => {
   );
 
   const tweets = await response.json();
+  console.log("tweets: ", tweets)
+  if (!tweets.data){
+    return []
+  }
 
   const getAuthorInfo = (author_id) => {
     return tweets.includes.users.find((user) => user.id === author_id);
@@ -47,7 +51,7 @@ export const getTweets = async (ids) => {
     );
   };
 
-  return tweets.data.reduce((allTweets, tweet) => {
+  return  tweets.data.reduce((allTweets, tweet) => {
     const tweetWithAuthor = {
       ...tweet,
       media:

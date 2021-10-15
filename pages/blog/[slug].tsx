@@ -19,14 +19,14 @@ export default function Blog({ post, tweets }: { post: Blog; tweets: any[] }) {
 
   return (
     <BlogLayout post={post}>
-      <Component
+      {/* <Component
         components={
           {
             ...components,
             StaticTweet
           } as any
         }
-      />
+      /> */}
     </BlogLayout>
   );
 }
@@ -40,7 +40,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const post = allBlogs.find((post) => post.slug === params.slug);
-  const tweets = await getTweets(post.tweetIds);
+  const tweets = [];
+  // const tweets = await getTweets(post.tweetIds);
 
   return { props: { post, tweets } };
 }
