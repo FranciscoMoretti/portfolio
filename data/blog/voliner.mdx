@@ -5,7 +5,12 @@ summary: 'Development and implementation of a flywheel energy storage system wit
 image: '/static/images/voliner/complete-render.png'
 ---
 
-![SolidWorks model render](/static/images/voliner/complete-render-700.png)
+<Image
+  alt={`SolidWorks model render`}
+  src={`/static/images/voliner/complete-render.png`}
+  width={2800 / 2}
+  height={1250 / 2}
+/>
 
 **Welcome!** This is my first blog post and I've found it to be the perfect
 opportunity to share my _final year engineering project_.
@@ -76,7 +81,12 @@ The converter's control
 strategies are implemented in a Texas Instruments F28335 DSP, programmed
 in C language.
 
-![Texas Instruments F28335 DSP](/static/images/voliner/tmdscncd28335_control_card-700.jpg)
+<Image
+  alt={`Texas Instruments F28335 DSP`}
+  src={`/static/images/voliner/tmdscncd28335_control_card.jpg`}
+  width={720}
+  height={400}
+/>
 
 ## Introduction
 
@@ -112,7 +122,12 @@ The following figure shows a **graphical representation of the resulting
 hybrid energy storage system**, which is also the base _system model_ used to
 create the control strategy:
 
-![Grid model](/static/images/voliner/introduction.svg)
+<Image
+  alt={`Grid model`}
+  src={`/static/images/voliner/introduction.svg`}
+  width={800}
+  height={600}
+/>
 
 Hybrid energy storage resulting from the combination of a battery bank
 and a _FESS_ is a solution that combines the _best of both worlds!_
@@ -175,9 +190,19 @@ that of a _FESS_ for higher power applications, **it's a device that serves
 well to research both energy management strategies and induction
 machine control**.
 
-![Flywheel covered](/static/images/voliner/flywheel_covered-700.jpg)
+<Image
+  alt={`Flywheel covered`}
+  src={`/static/images/voliner/flywheel_covered.jpg`}
+  width={3449/3}
+  height={3448/3}
+/>
 
-![Flywheel uncovered](/static/images/voliner/flywheel_uncovered-700.jpg)
+<Image
+  alt={`Flywheel uncovered`}
+  src={`/static/images/voliner/flywheel_uncovered.jpg`}
+  width={3356/3}
+  height={3356/3}
+/>
 
 ## Mechanical assembly
 
@@ -190,9 +215,19 @@ The design process began with the modeling of the existing components.
 Those are, the **inertia disks** (two identical disks were used)
 and the **induction machine**.
 
-![Intertia disk](/static/images/voliner/inertia_disk-700.jpg)
+<Image
+  alt={`Intertia disk`}
+  src={`/static/images/voliner/inertia_disk.jpg`}
+  width={1277}
+  height={850}
+/>
 
-![Electric motor](/static/images/voliner/electric_motor-700.jpg)
+<Image
+  alt={`Electric motor`}
+  src={`/static/images/voliner/electric_motor.jpg`}
+  width={1138}
+  height={758}
+/>
 
 Based on these 3D models all other components were designed:
 
@@ -215,20 +250,34 @@ The **steel insert** fulfills two functions:
   _fastening of the disks to each other_, **transforming them into a single
   rigid piece**.
 
-![Insert](/static/images/voliner/insert-700.jpg)
+<Image
+  alt={`Insert`}
+  src={`/static/images/voliner/insert.jpg`}
+  width={1872}
+  height={1249}
+/>
 
 The **self-aligning coupling** can be adjusted with its _radial
 expansion_ by tightening a series of bolts located on one of its faces.
 When the expansion occurs, the coupling exerts pressure on the _motor shaft_
 and _steel insert_, achieving the desired fastening.
 
-![BLK 130](/static/images/voliner/BLK130-700.jpg)
+<Image
+  alt={`BLK 130`}
+  src={`/static/images/voliner/BLK130.jpg`}
+  width={1188}
+  height={792}
+/>
 
 By joining all the pieces, we obtain a rigid **flywheel composed of two inertia
 disks** that can be directly fixed to the _motor axis_.
 
-![Intertia assembly](/static/images/voliner/inertia_assembly-700.jpg)
-
+<Image
+  alt={`Intertia assembly`}
+  src={`/static/images/voliner/inertia_assembly.jpg`}
+  width={1752}
+  height={1169}
+/>
 
 ### Mounting base
 
@@ -245,7 +294,12 @@ height in order to achieve _great stability_.
 _Structural pipe_ with a rectangular profile of 50x20x2mm
 was chosen for its construction.
 
-![Mounting base](/static/images/voliner/mounting_base-700.jpg)
+<Image
+  alt={`Mounting base`}
+  src={`/static/images/voliner/mounting_base.jpg`}
+  width={1052}
+  height={702}
+/>
 
 ### Acrylic dome
 
@@ -254,16 +308,31 @@ _rotating parts_ of the system while providing a _mounting solution
 for the encoder_. For its creation, an acrylic plate of 5mm of thickness was
 carved by a CNC laser cutter.
 
-![Acrylic dome](/static/images/voliner/acrylic_dome-700.jpg)
+<Image
+  alt={`Acrylic dome`}
+  src={`/static/images/voliner/acrylic_dome.jpg`}
+  width={1275}
+  height={850}
+/>
 
 ### Complete assembly
 
 Finally here is a _cross section_ view and a complete one of
 the whole system SolidWorks model.
 
-![Cross section](/static/images/voliner/cross_section-700.jpg)
+<Image
+  alt={`Cross section`}
+  src={`/static/images/voliner/cross_section.jpg`}
+  width={1873}
+  height={1249}
+/>
 
-![Complete assembly](/static/images/voliner/complete_assembly-700.jpg)
+<Image
+  alt={`Complete assembly`}
+  src={`/static/images/voliner/complete_assembly.jpg`}
+  width={1275}
+  height={850}
+/>
 
 ## Electronic Converter
 
@@ -278,9 +347,19 @@ the _three-phase IGBTs bridge_
 with their respective drivers and protections, and _Texas Instruments
 F28335 DSP_ where control strategies are implemented.
 
-![Converter front](/static/images/voliner/converter_front-700.jpg)
+<Image
+  alt={`Converter front`}
+  src={`/static/images/voliner/converter_front.jpg`}
+  width={4608/4}
+  height={3456/4}
+/>
 
-![Converter back](/static/images/voliner/converter_back-700.jpg)
+<Image
+  alt={`Converter back`}
+  src={`/static/images/voliner/converter_back.jpg`}
+  width={4608/4}
+  height={3456/4}
+/>
 
 ## Control Strategy
 
@@ -295,7 +374,12 @@ is occupied by the _flywheel_**
 Let's see a simplified schema of the implemented control
 topology, which is reduced to a number of nested PID controllers.
 
-![Grid model](/static/images/voliner/control_scheme.svg)
+<Image
+  alt={`Grid model`}
+  src={`/static/images/voliner/control_scheme.svg`}
+  width={1029}
+  height={719}
+/>
 
 - At the **inner level** we can see the regulators that control the induction
   machine's **currents in the _dq_ frame**, i.e. _i<sub>d</sub>_ and _i<sub>q</sub>_.
@@ -361,7 +445,12 @@ We begin by analyzing the **system response to a _4A_ load step**.
    It's observed that **the voltage evolution is
    much smoother than when the _FESS_ is disabled** (natural).
 
-![Step response](/static/images/voliner/step_response.svg)
+<Image
+  alt={`Step response`}
+  src={`/static/images/voliner/step_response.svg`}
+  width={800}
+  height={600}
+/>
 
 ### Pulse test
 
@@ -370,7 +459,12 @@ Let's analyze now the **system response to a _4A_ load pulse of
 disturbance, but **reduces the amplitude of battery current
 and _DC bus_ voltage variations by approximately 75%**.
 
-![Pulse response](/static/images/voliner/pulse_response.svg)
+<Image
+  alt={`Pulse response`}
+  src={`/static/images/voliner/pulse_response.svg`}
+  width={800}
+  height={600}
+/>
 
 ## Conclusions
 
