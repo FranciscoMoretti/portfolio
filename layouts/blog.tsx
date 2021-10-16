@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { parseISO, format } from 'date-fns';
 
 import Container from 'components/Container';
-import Subscribe from 'components/Subscribe';
 import ViewCounter from 'components/ViewCounter';
 import type { PropsWithChildren } from 'react';
 import type { Blog } from '.contentlayer/types';
@@ -53,18 +52,8 @@ export default function BlogLayout({
         <div className="w-full mt-4 prose dark:prose-dark max-w-none">
           {children}
         </div>
-        <div className="mt-8">
-          <Subscribe />
-        </div>
+        <span className="h-16" />
         <div className="text-sm text-gray-700 dark:text-gray-300">
-          <a
-            href={discussUrl(post.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Discuss on Twitter'}
-          </a>
-          {` • `}
           <a
             href={editUrl(post.slug)}
             target="_blank"
