@@ -28,6 +28,11 @@ export default function Footer() {
               About
             </a>
           </Link>
+          <Link href="/blog">
+            <a className="text-gray-500 hover:text-gray-600 transition">
+              Blog
+            </a>
+          </Link>
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://twitter.com/leeerob">
