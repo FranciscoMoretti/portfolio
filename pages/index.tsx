@@ -84,26 +84,24 @@ export default function Home({ videos }) {
           </a>
         </Link>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
-          Latest software talks
+          Latest Software Talks
         </h3>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          Build and deploy a modern SaaS application using the most popular
-          open-source software. This course is 12 hours long and is completely
-          live streamed.
+          These are the latests videos I've added to the my list of recommended software talks.
         </p>
         <VideoCard
           index="01"
-          href="https://www.youtube.com/watch?v=MxR5I5_hOKk&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=2"
-          length="1:02:45"
-          title="Introduction to React 2025"
+          href="https://youtu.be/bFSnXNIsK4A"
+          length="56:47"
+          title="105 STL Algorithms in Less Than an Hour"
         />
         <VideoCard
           index="02"
-          href="https://www.youtube.com/watch?v=AGl52moyISU&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=3"
-          length="54:22"
-          title="Firestore, Chakra UI, Absolute Imports"
+          href="https://youtu.be/3jCOwajNch0"
+          length="52:08"
+          title="Back to Basics: Lambdas from Scratch - Arthur O'Dwyer - CppCon 2019"
         />
-        <VideoCard
+        {/* <VideoCard
           index="03"
           href="https://www.youtube.com/watch?v=3g6-v3_BNbM&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=4"
           length="1:08:30"
@@ -114,11 +112,11 @@ export default function Home({ videos }) {
           href="https://www.youtube.com/watch?v=u8iv_yhSRI8&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=5"
           length="1:13:45"
           title="Firebase Admin with Next.js + SWR"
-        />
+        /> */}
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.youtube.com/playlist?list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1"
+          href="https://youtube.com/playlist?list=PLeEX4sJL6yWxWPuKUS9gEl5RAqkX6e-kS"
           className="flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
         >
           Watch all videos
