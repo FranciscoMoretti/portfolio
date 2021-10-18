@@ -7,11 +7,7 @@ import type { PropsWithChildren } from 'react';
 import type { Blog } from '.contentlayer/types';
 
 const editUrl = (slug) =>
-  `https://github.com/leerob/leerob.io/edit/main/data/blog/${slug}.mdx`;
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://leerob.io/blog/${slug}`
-  )}`;
+  `https://github.com/FranciscoMoretti/portfolio/edit/main/data/blog/${slug}.mdx`;
 
 export default function BlogLayout({
   children,
@@ -19,9 +15,9 @@ export default function BlogLayout({
 }: PropsWithChildren<{ post: Blog }>) {
   return (
     <Container
-      title={`${post.title} – Lee Robinson`}
+      title={`${post.title} – Francisco Moretti`}
       description={post.summary}
-      image={`https://leerob.io${post.image}`}
+      image={`https://franciscomoretti.vercel.app${post.image}`}
       date={new Date(post.publishedAt).toISOString()}
       type="article"
     >
@@ -32,14 +28,14 @@ export default function BlogLayout({
         <div className="flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center">
           <div className="flex items-center">
             <Image
-              alt="Lee Robinson"
+              alt="Francisco Moretti"
               height={24}
               width={24}
               src="/avatar.jpg"
               className="rounded-full"
             />
             <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
-              {'Lee Robinson / '}
+              {'Francisco Moretti / '}
               {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')}
             </p>
           </div>

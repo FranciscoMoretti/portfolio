@@ -3,17 +3,17 @@ import Container from 'components/Container';
 export default function UsesLayout({ children }) {
   return (
     <Container
-      title="Uses – Lee Robinson"
-      description="Here's what tech I'm currently using for coding, videos, and music."
+      title="Uses – Francisco Moretti"
+      description="Here are some of the things I've used."
     >
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          My Gear
+          Things I've used
         </h1>
         <p className="text-gray-700 dark:text-gray-300 mt-2 mb-8">
-          Here's what tech I'm currently using for coding, videos, and music.
-          Most of these have been accumulated over the past few years, with a
-          recent office upgrade in 2020.
+          I love learning in the hands-on approach and trying technologies and features. Here are some of the things
+          I've used and some references for myself and other readers. Extending this list is also a great motivation to
+          continue experimenting with even more stuff.
         </p>
         <div className="prose dark:prose-dark w-full">{children}</div>
       </article>
