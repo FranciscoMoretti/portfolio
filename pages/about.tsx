@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import Timeline from '../components/Timeline';
 import Container from 'components/Container';
 
 export default function About() {
@@ -23,7 +22,6 @@ export default function About() {
           in a wide variety of fields.
           </p>
         </div>
-        <Timeline />
       </div>
     </Container>
   );
