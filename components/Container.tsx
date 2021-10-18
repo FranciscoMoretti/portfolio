@@ -40,7 +40,7 @@ export default function Container(props) {
   const meta = {
     title: 'Francisco Moretti.',
     description: `Software developer, electronic engineer and roboticist.`,
-    image: 'https://leerob.io/static/images/banner.png',
+    image: 'https://franciscomoretti.vercel.app/static/images/banner.png',
     type: 'website',
     ...customMeta
   };
