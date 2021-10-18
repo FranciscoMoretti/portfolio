@@ -4,15 +4,15 @@ import { allBlogs } from '.contentlayer/data';
 
 async function generate() {
   const feed = new RSS({
-    title: 'Lee Robinson',
-    site_url: 'https://leerob.io',
-    feed_url: 'https://leerob.io/feed.xml'
+    title: 'Francisco Moretti',
+    site_url: 'https://franciscomoretti.vercel.app',
+    feed_url: 'https://franciscomoretti.vercel.app/feed.xml'
   });
 
   allBlogs.map((post) => {
     feed.item({
       title: post.title,
-      url: `https://leerob.io/blog/${post.slug}`,
+      url: `https://franciscomoretti.vercel.app/blog/${post.slug}`,
       date: post.publishedAt,
       description: post.summary
     });
