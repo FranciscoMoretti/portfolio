@@ -42,6 +42,9 @@ export default function Footer() {
           <Link href="/uses">
             <a className="text-gray-500 hover:text-gray-600 transition">Uses</a>
           </Link>
+          <Link href="/talks">
+            <a className="text-gray-500 hover:text-gray-600 transition">Software Talks</a>
+          </Link>
         </div>
       </div>
     </footer>
