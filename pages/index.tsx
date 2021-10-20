@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Container from '../components/Container';
 import BlogPostCard from '../components/BlogPostCard';
-import VideoCard from '../components/VideoCard';
+import VideoCardCompact from '../components/VideoCardCompact';
 
 export default function Home({ videos }) {
   return (
@@ -89,13 +89,13 @@ export default function Home({ videos }) {
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           These are the latests videos I've added to the my list of recommended software talks.
         </p>
-        <VideoCard
+        <VideoCardCompact
           index="01"
           href="https://youtu.be/bFSnXNIsK4A"
           length="56:47"
           title="105 STL Algorithms in Less Than an Hour"
         />
-        <VideoCard
+        <VideoCardCompact
           index="02"
           href="https://youtu.be/3jCOwajNch0"
           length="52:08"

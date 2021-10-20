@@ -1,4 +1,4 @@
-export default function VideoCard({ href, length, title, index }) {
+export default function VideoCardCompact({ href, length, title, index }) {
   return (
     <a
       className="w-full"
