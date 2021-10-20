@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Container from '../components/Container';
 import BlogPostCard from '../components/BlogPostCard';
-import VideoCardCompact from '../components/VideoCardCompact';
+import YoutubePlaylistCompact from '../components/YoutubePlaylistCompact';
 
 export default function Home({ videos }) {
   return (
@@ -89,30 +89,7 @@ export default function Home({ videos }) {
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           These are the latests videos I've added to the my list of recommended software talks.
         </p>
-        <VideoCardCompact
-          index="01"
-          href="https://youtu.be/bFSnXNIsK4A"
-          length="56:47"
-          title="105 STL Algorithms in Less Than an Hour"
-        />
-        <VideoCardCompact
-          index="02"
-          href="https://youtu.be/3jCOwajNch0"
-          length="52:08"
-          title="Back to Basics: Lambdas from Scratch - Arthur O'Dwyer - CppCon 2019"
-        />
-        {/* <VideoCard
-          index="03"
-          href="https://www.youtube.com/watch?v=3g6-v3_BNbM&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=4"
-          length="1:08:30"
-          title="Designing & Building the Dashboard"
-        />
-        <VideoCard
-          index="04"
-          href="https://www.youtube.com/watch?v=u8iv_yhSRI8&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=5"
-          length="1:13:45"
-          title="Firebase Admin with Next.js + SWR"
-        /> */}
+        <YoutubePlaylistCompact maxItems = "4" />
         <a
           target="_blank"
           rel="noopener noreferrer"

@@ -1,4 +1,4 @@
-export default function VideoCardCompact({ href, length, title, index }) {
+export default function VideoCardCompact({ href, channel, title, index }) {
   return (
     <a
       className="w-full"
@@ -19,7 +19,7 @@ export default function VideoCardCompact({ href, length, title, index }) {
           </div>
           <div className="flex items-center mt-2 sm:mt-0 w-full sm:w-auto justify-between">
             <p className="text-gray-500 dark:text-gray-400 text-left sm:text-right w-32 md:mb-0 mr-2 ml-10 sm:ml-0">
-              {length}
+              {channel}
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
