@@ -28,10 +28,16 @@ export type TopTracks = {
   tracks: Song[];
 };
 
-export type YouTube = {
-  subscriberCount: number;
-  viewCount: number;
+
+export type YouTubeVideo = {
+  videoId: string;
+  title: string;
+  videoOwnerChannelTitle: string;
+  thumbnailUrl: string;
+  position: number;
 };
+
+export type YouTubePlaylist = YouTubeVideo[];
 
 export type GitHub = {
   stars: number;
