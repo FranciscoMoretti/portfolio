@@ -1,4 +1,6 @@
 import Container from 'components/Container';
+import YoutubePlaylistFull from 'components/YoutubePlaylistFull';
+
 export default function SoftwareTalks() {
   return (
     <Container
@@ -15,6 +17,7 @@ export default function SoftwareTalks() {
           </p>
         </div>
         <div className="flex flex-col w-full">
+          <YoutubePlaylistFull />
         </div>
       </div>
     </Container>
