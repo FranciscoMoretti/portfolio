@@ -11,7 +11,7 @@ export default function YouTubePlaylistFull() {
     <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
       {!data && (
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          No videos found.
+          Loading playlist...
         </p>
       )}
       {data && data.map( youTubeVideo => (
