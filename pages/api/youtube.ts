@@ -14,7 +14,9 @@ export default async function handler(
     version: 'v3'
   });
 
-  const response = await youtube.playlistItems.list({
+  // TODO: Fix Youtube response type, currently Schema$PlaylistItemSnippet doesn't contain videoOwnerChannelTitle
+  // in its type bit it's part of the response.
+  const response: any = await youtube.playlistItems.list({
     playlistId: 'PLeEX4sJL6yWxWPuKUS9gEl5RAqkX6e-kS',
     part: 'contentDetails, snippet'
   })
