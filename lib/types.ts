@@ -28,12 +28,17 @@ export type TopTracks = {
   tracks: Song[];
 };
 
+export type YouTubeVideoThumbnail = {
+  url: string;
+  width: number;
+  height: number;
+};
 
 export type YouTubeVideo = {
   videoId: string;
   title: string;
   videoOwnerChannelTitle: string;
-  thumbnailUrl: string;
+  thumbnail: YouTubeVideoThumbnail;
   position: number;
 };
 
