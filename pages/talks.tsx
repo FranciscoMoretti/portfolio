@@ -13,7 +13,7 @@ export default function SoftwareTalks() {
         </h1>
         <div className="mb-8">
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            This is the list of my favourites softawre talks.
+            This is the list of my favourites software talks.
           </p>
         </div>
         <div className="flex flex-col w-full">
