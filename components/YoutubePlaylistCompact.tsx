@@ -20,7 +20,7 @@ export default function YouTubePlaylistCompact({ maxItems }) {
           title={youTubeVideo.title}
           href={'https://www.youtube.com/watch?v='+ youTubeVideo.videoId}
           channel={youTubeVideo.videoOwnerChannelTitle}
-          index={youTubeVideo.position}
+          index={youTubeVideo.position + 1} // Start from index 1
         />
       )
       )}
