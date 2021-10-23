@@ -27,15 +27,13 @@ export default function TalkLayout({
         </h1>
         <div className="flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center">
           <div className="flex items-center">
-            <a href={'https://www.youtube.com/watch?v=' + post.slug}>
-              <Image
-                alt="Francisco Moretti"
-                height={24}
-                width={24}
-                src="/avatar.jpg"
-                className="rounded-full"
-              />
-            </a>
+            <Image
+              alt="Francisco Moretti"
+              height={24}
+              width={24}
+              src="/avatar.jpg"
+              className="rounded-full"
+            />
             <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
               {'Francisco Moretti / '}
               {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')}
@@ -46,6 +44,15 @@ export default function TalkLayout({
             {` • `}
             <ViewCounter slug={post.slug} />
           </p>
+        </div>
+        <div className=" w-full mt-4 prose dark:prose-dark max-w-none aspect-w-16 aspect-h-9">
+          <iframe
+            src={'https://www.youtube.com/embed/' + post.slug}
+            title={post.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
         <div className="w-full mt-4 prose dark:prose-dark max-w-none">
           {children}
