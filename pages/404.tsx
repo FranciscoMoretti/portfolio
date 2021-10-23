@@ -7,7 +7,7 @@ export default function NotFound() {
     <Container title="404 – Francisco Moretti">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          404 – Oh no, this page is not
+          404 – The page was not found
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-8">
           Whoops, this page might have existed in the past or the URL might be incorrect. You can try to check that URL
