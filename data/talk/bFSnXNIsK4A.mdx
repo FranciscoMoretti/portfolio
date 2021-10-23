@@ -1,6 +1,210 @@
 ---
 title: '105 STL Algorithms in Less Than an Hour'
-publishedAt: '2020-10-21'
+publishedAt: '2020-10-23'
 ---
 
-**Welcome!** Dummy talk layout page
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [105 STL Algorithms](#105-stl-algorithms)
+  - [Advantages](#advantages)
+  - [There is a world of STL algorithms](#there-is-a-world-of-stl-algorithms)
+  - [Lands and Provinces](#lands-and-provinces)
+    - [Terminology](#terminology)
+  - [Land of permutations](#land-of-permutations)
+    - [Province of Heaps](#province-of-heaps)
+    - [Shore of Sorting](#shore-of-sorting)
+    - [Region of Partitioning](#region-of-partitioning)
+    - [Other Permutations](#other-permutations)
+    - [Secret Runes](#secret-runes)
+  - [Land of Queries](#land-of-queries)
+    - [Province of Value Queries](#province-of-value-queries)
+    - [Province of Property Queries](#province-of-property-queries)
+    - [Province of 2-Ranges Properties](#province-of-2-ranges-properties)
+    - [Province of Research](#province-of-research)
+  - [Glorious County of Algorithms on Sets](#glorious-county-of-algorithms-on-sets)
+  - [Territory of Movers](#territory-of-movers)
+  - [Land of Value Modifiers](#land-of-value-modifiers)
+  - [Island of Structure Changers](#island-of-structure-changers)
+  - [Lonely Islands](#lonely-islands)
+  - [Peninsula of Raw Memory](#peninsula-of-raw-memory)
+- [Next steps](#next-steps)
+
+## Introduction
+This is an excellent talk by **Jonathan Boccara** from **CppCon 2018**. Jonathan's site [Fluent{C++}](https://www.fluentcpp.com/) has some resources mentioned in this talk. Not only this talk teaches ways to use the STL library, but also it shows many interesting algorithms that you might not know.
+
+
+## 105 STL Algorithms
+It's a good thing to know STL algorithms but not many people knows them all. This talk includes algorithms from C++17.
+
+### Advantages
+- They make the code more expressive.
+- They avoid common mistakes.
+- They are really efficient.
+- They are used by a lot of people.
+  - It's code tested very well.
+  - It's a common language.
+
+The most common one is `for_each` but there is so much more.
+
+### There is a world of STL algorithms
+![World map](/public/static/images/talk/bFSnXNIsK4A/world_map_800.jpg)
+
+You can get a high quality image of the map in [FluentC++ - The World Map of C++ STL Algorithms](https://www.fluentcpp.com/getthemap/).
+
+### Lands and Provinces
+The map is divided in provinces which are groups of related algorithms. Many similarities can be found in them and this topological representation helps with learning and applying them.
+#### Terminology
+- Land: Group of algorithms that share a property.
+- Province: Group of algorithms in a Land that share a closer relationship.
+
+### Land of permutations
+Elements move around the collection even if they don't change their value.
+
+#### Province of Heaps
+- make_heap
+- push_heap
+- pop_heap
+
+#### Shore of Sorting
+- sort
+- sort_heap
+- partial_sort
+- nth_element
+- inplace_merge
+
+
+#### Region of Partitioning
+- partition
+- partition_point
+
+#### Other Permutations
+- rotate
+- shuffle
+- reverse
+- next_permutation
+- prev_permutation
+- random_shuffle (kind of related)
+
+![Other Permutations](/public/static/images/talk/bFSnXNIsK4A/other_permutations.png)
+
+#### Secret Runes
+
+Combine them with other algorithms to create new ones. Including some algorithms from [Territory of Movers](#territory-of-movers), [Land of Value Modifiers](#land-of-value-modifiers), [Island of Structure Changers](#island-of-structure-changers) and [Peninsula of Raw Memory](#peninsula-of-raw-memory).
+- stable_*
+- *_copy
+- *_if
+- *_n
+- is_*
+- is_*__until
+
+### Land of Queries
+Extract some sort of value from a collection.
+
+#### Province of Value Queries
+Also called Numeric Algorithms.
+
+- count
+- accumulate
+  - (transform_)reduce
+- partial_sum
+  - (transform_)inclusive_scan
+  - (transform_)exclusive_scan
+- inner_product
+- adjacent_difference
+- sample
+
+![Numeric Algorithms](/public/static/images/talk/bFSnXNIsK4A/numeric_algorithms.png)
+
+#### Province of Property Queries
+
+On 1 range
+- all_of
+- any_of
+- none_of
+
+#### Province of 2-Ranges Properties
+On 2 ranges
+- equal
+- lexicographical_compare
+- mismatch
+- is_permutation
+
+![Query Property on 2 Ranges](/public/static/images/talk/bFSnXNIsK4A/query_property_on_2_ranges.png)
+
+
+#### Province of Research
+
+Value Searchers
+
+- For not sorted
+  - find
+  - adjacent_find
+
+- For sorted
+  - equal_range
+  - lower_bound
+  - upper_bound
+  - binary_search
+
+![Searching a Value](/public/static/images/talk/bFSnXNIsK4A/searching_a_value.png)
+
+Range Searchers
+- search
+- find_end
+- find_first_of
+
+![Searching a Range](/public/static/images/talk/bFSnXNIsK4A/searching_a_value.png)
+
+Relative Value Searchers
+- max_element
+- min_element
+
+### Glorious County of Algorithms on Sets
+Any sorted collection can be considered a set.
+- set_difference
+- set_intersection
+- set_union
+- set_symetric_difference
+- set_includes
+- merge
+
+![Algos on Sets](/public/static/images/talk/bFSnXNIsK4A/algos_on_sets.png)
+
+### Territory of Movers
+Move things around.
+- copy
+  - copy_backward
+- move
+  - move_backward
+- swap_ranges
+
+### Land of Value Modifiers
+- fill
+- iota
+- generate
+- replace
+
+### Island of Structure Changers
+Remember to erase the space of removed values.
+- remove
+- unique
+
+### Lonely Islands
+Not closely related to any others in particular.
+- transform (can take 1 or 2 collections)
+- for_each (mostly should be used for side effects)
+
+### Peninsula of Raw Memory
+Use the constructor operator (instead of the assignment operator like all the others).
+- uninitialized_fill
+- uninitialized_copy
+- uninitialized_move
+- destroy
+- uninitialized_default_construct
+- uninitialized_value_construct
+
+## Next steps
+- Use the STL algorithms to make your code more expressive.
+- Replace your for-loops for the right algorithm.
+- Go a step further by learning Boost algorithms.
