@@ -47,6 +47,7 @@ export default function TalkLayout({
         </div>
         <div className=" w-full mt-4 prose dark:prose-dark max-w-none aspect-w-16 aspect-h-9">
           <iframe
+            className="rounded-lg"
             src={'https://www.youtube.com/embed/' + post.slug}
             title={post.title}
             frameBorder="0"
