@@ -25,7 +25,6 @@ export default function Talk({ post }: { post: Talk }) {
 }
 
 export async function getStaticPaths() {
-  console.log("allTalksPaths: ", allTalks)
   return {
     paths: allTalks.map((p) => ({ params: { slug: p.slug } })),
     fallback: false
@@ -33,7 +32,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  console.log("allTalksProps: ", allTalks)
   const post = allTalks.find((post) => post.slug === params.slug);
 
   return { props: { post} };
