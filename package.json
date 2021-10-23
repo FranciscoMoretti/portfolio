@@ -30,6 +30,7 @@
     "use-delayed-render": "^0.0.7"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.3.0",
     "@types/react": "^17.0.26",
     "autoprefixer": "10.3.6",
     "eslint": "7.32.0",
