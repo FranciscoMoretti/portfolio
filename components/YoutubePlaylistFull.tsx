@@ -18,8 +18,9 @@ export default function YouTubePlaylistFull({ posts }) {
         </p>
       )}
       {data && data.map( youTubeVideo => {
-        const videoLink = 'https://www.youtube.com/watch?v=' + youTubeVideo.videoId 
-        let href = youTubeVideo.videoId in postOfVideoId ?
+        const videoLink = 'https://www.youtube.com/watch?v=' + youTubeVideo.videoId
+        const notesAreAvailable = youTubeVideo.videoId in postOfVideoId
+        let href = notesAreAvailable ?
           'talk/'+ youTubeVideo.videoId :
           videoLink
 
@@ -31,7 +32,7 @@ export default function YouTubePlaylistFull({ posts }) {
           channel={youTubeVideo.videoOwnerChannelTitle}
           index={youTubeVideo.position}
           thumbnail={youTubeVideo.thumbnail}
-          videoLink={videoLink}
+          notesAreAvailable={notesAreAvailable}
         />
         )
     }
