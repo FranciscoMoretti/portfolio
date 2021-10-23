@@ -32,7 +32,7 @@ export default function SoftwareTalks({
 
 export function getStaticProps() {
   const posts = allTalks.map((post) =>
-    pick(post, ['slug', 'title', 'summary', 'publishedAt'])
+    pick(post, ['slug', 'title', 'publishedAt'])
   );
 
   return { props: { posts } };
