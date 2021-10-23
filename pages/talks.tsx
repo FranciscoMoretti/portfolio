@@ -1,7 +1,13 @@
 import Container from 'components/Container';
 import YoutubePlaylistFull from 'components/YoutubePlaylistFull';
+import { InferGetStaticPropsType } from 'next';
+import { pick } from 'lib/utils';
+import { allTalks } from '.contentlayer/data';
 
-export default function SoftwareTalks() {
+export default function SoftwareTalks({
+  posts
+}: InferGetStaticPropsType<typeof getStaticProps>) {
+
   return (
     <Container
       title="Software Talks – Francisco Moretti"
@@ -13,13 +19,21 @@ export default function SoftwareTalks() {
         </h1>
         <div className="mb-8">
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            This is the list of my favourites softawre talks.
+            This is the list of my favourites software talks.
           </p>
         </div>
         <div className="flex flex-col w-full">
-          <YoutubePlaylistFull />
+          <YoutubePlaylistFull posts={posts} />
         </div>
       </div>
     </Container>
   );
+}
+
+export function getStaticProps() {
+  const posts = allTalks.map((post) =>
+    pick(post, ['slug', 'title', 'publishedAt'])
+  );
+
+  return { props: { posts } };
 }

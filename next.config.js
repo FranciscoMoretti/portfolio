@@ -12,7 +12,6 @@ module.exports = withContentlayer()({
   reactStrictMode: true,
   images: {
     domains: [
-      'pbs.twimg.com' // Twitter Profile Picture
     ]
   },
   async headers() {

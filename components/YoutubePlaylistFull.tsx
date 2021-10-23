@@ -4,8 +4,11 @@ import fetcher from 'lib/fetcher';
 import { YouTubePlaylist} from 'lib/types';
 import VideoCardFull from 'components/VideoCardFull';
 
-export default function YouTubePlaylistFull() {
+export default function YouTubePlaylistFull({ posts }) {
   const { data } = useSWR<YouTubePlaylist>('/api/youtube', fetcher);
+
+  // The post slug, which is also the document stem, is the YouTube videoId.
+  let postOfVideoId = posts.reduce((a,x) => ({...a, [x.slug]: x}), {})
 
   return (
     <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
@@ -14,16 +17,25 @@ export default function YouTubePlaylistFull() {
           Loading playlist...
         </p>
       )}
-      {data && data.map( youTubeVideo => (
+      {data && data.map( youTubeVideo => {
+        const videoLink = 'https://www.youtube.com/watch?v=' + youTubeVideo.videoId
+        const notesAreAvailable = youTubeVideo.videoId in postOfVideoId
+        let href = notesAreAvailable ?
+          'talk/'+ youTubeVideo.videoId :
+          videoLink
+
+        return (
         <VideoCardFull
           key={youTubeVideo.position}
           title={youTubeVideo.title}
-          href={'https://www.youtube.com/watch?v='+ youTubeVideo.videoId}
+          href={href}
           channel={youTubeVideo.videoOwnerChannelTitle}
           index={youTubeVideo.position}
           thumbnail={youTubeVideo.thumbnail}
+          notesAreAvailable={notesAreAvailable}
         />
-      )
+        )
+    }
       )}
     </div>
   );
