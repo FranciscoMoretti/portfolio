@@ -7,7 +7,8 @@ import VideoCardFull from 'components/VideoCardFull';
 export default function YouTubePlaylistFull({ posts }) {
   const { data } = useSWR<YouTubePlaylist>('/api/youtube', fetcher);
 
-  let post_of_slug = posts.reduce((a,x) => ({...a, [x.slug]: x}), {})
+  // The post slug, which is also the document stem, is the YouTube videoId.
+  let postOfVideoId = posts.reduce((a,x) => ({...a, [x.slug]: x}), {})
 
   return (
     <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
@@ -18,7 +19,7 @@ export default function YouTubePlaylistFull({ posts }) {
       )}
       {data && data.map( youTubeVideo => {
         const videoLink = 'https://www.youtube.com/watch?v=' + youTubeVideo.videoId 
-        let href = youTubeVideo.videoId in post_of_slug ?
+        let href = youTubeVideo.videoId in postOfVideoId ?
           'talk/'+ youTubeVideo.videoId :
           videoLink
 
