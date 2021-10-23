@@ -1,4 +1,4 @@
-export default function VideoCardFull({ href, channel, title, index, thumbnail }) {
+export default function VideoCardFull({ href, channel, title, index, thumbnail, videoLink}) {
   return (
     <a
       className="w-full"
