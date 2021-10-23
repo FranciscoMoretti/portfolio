@@ -16,7 +16,7 @@ export default function TalkLayout({
   return (
     <Container
       title={'Notes - ' + post.title + ' – Francisco Moretti'}
-      description={post.summary}
+      description={'Notes of the conference talk "' + post.title + '"'}
       image={`https://franciscomoretti.vercel.app${post.image}`}
       date={new Date(post.publishedAt).toISOString()}
       type="article"
