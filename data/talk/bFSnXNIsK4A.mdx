@@ -32,6 +32,7 @@ publishedAt: '2020-10-23'
 
 ## Introduction
 This is an excellent talk by **Jonathan Boccara** from **CppCon 2018**. Jonathan's site [Fluent C++](https://www.fluentcpp.com/) has some resources mentioned in this talk. Not only this talk teaches ways to use the STL library, but also it shows many interesting algorithms that you might not know.
+All the algorithms mentioned in these notes have links to [C++ reference](https://en.cppreference.com/w/).
 
 
 ## 105 STL Algorithms
@@ -67,29 +68,29 @@ The map is divided in provinces which are groups of related algorithms. Many sim
 Elements move around the collection even if they don't change their value.
 
 #### Province of Heaps
-- make_heap
-- push_heap
-- pop_heap
+- [make_heap](https://www.cplusplus.com/reference/algorithm/make_heap/)
+- [push_heap](https://en.cppreference.com/w/cpp/algorithm/push_heap)
+- [pop_heap](https://en.cppreference.com/w/cpp/algorithm/pop_heap)
 
 #### Shore of Sorting
-- sort
-- sort_heap
-- partial_sort
-- nth_element
-- inplace_merge
+- [sort](https://en.cppreference.com/w/cpp/algorithm/sort)
+- [sort_heap](https://en.cppreference.com/w/cpp/algorithm/sort_heap)
+- [partial_sort](https://en.cppreference.com/w/cpp/algorithm/partial_sort)
+- [nth_element](https://en.cppreference.com/w/cpp/algorithm/nth_element)
+- [inplace_merge](https://en.cppreference.com/w/cpp/algorithm/inplace_merge)
 
 
 #### Region of Partitioning
-- partition
-- partition_point
+- [partition](https://en.cppreference.com/w/cpp/algorithm/partition)
+- [partition_point](https://en.cppreference.com/w/cpp/algorithm/partition_point)
 
 #### Other Permutations
-- rotate
-- shuffle
-- reverse
-- next_permutation
-- prev_permutation
-- random_shuffle (kind of related)
+- [rotate](https://en.cppreference.com/w/cpp/algorithm/rotate)
+- [shuffle](https://en.cppreference.com/w/cpp/algorithm/random_shuffle)
+- [reverse](https://en.cppreference.com/w/cpp/algorithm/reverse)
+- [next_permutation](https://en.cppreference.com/w/cpp/algorithm/next_permutation)
+- [prev_permutation](https://en.cppreference.com/w/cpp/algorithm/prev_permutation)
+- [random_shuffle](https://en.cppreference.com/w/cpp/algorithm/random_shuffle) (kind of related)
 
 <Image
   alt={`Other Permutations`}
@@ -114,15 +115,15 @@ Extract some sort of value from a collection.
 #### Province of Value Queries
 Also called Numeric Algorithms.
 
-- count
-- accumulate
-  - (transform_)reduce
-- partial_sum
-  - (transform_)inclusive_scan
-  - (transform_)exclusive_scan
-- inner_product
-- adjacent_difference
-- sample
+- [count](https://en.cppreference.com/w/cpp/algorithm/count)
+- [accumulate](https://en.cppreference.com/w/cpp/algorithm/accumulate)
+  - (transform_)[reduce](https://en.cppreference.com/w/cpp/algorithm/reduce)
+- [partial_sum](https://en.cppreference.com/w/cpp/algorithm/partial_sum)
+  - (transform_)[inclusive_scan](https://en.cppreference.com/w/cpp/algorithm/inclusive_scan)
+  - (transform_)[exclusive_scan](https://en.cppreference.com/w/cpp/algorithm/exclusive_scan)
+- [inner_product](https://en.cppreference.com/w/cpp/algorithm/inner_product)
+- [adjacent_difference](https://en.cppreference.com/w/cpp/algorithm/adjacent_difference)
+- [sample](https://en.cppreference.com/w/cpp/algorithm/sample)
 
 <Image
   alt={`Numeric Algorithms`}
@@ -134,16 +135,16 @@ Also called Numeric Algorithms.
 #### Province of Property Queries
 
 On 1 range
-- all_of
-- any_of
-- none_of
+- [all_of](https://en.cppreference.com/w/cpp/algorithm/all_any_none_of)
+- [any_of](https://en.cppreference.com/w/cpp/algorithm/all_any_none_of)
+- [none_of](https://en.cppreference.com/w/cpp/algorithm/all_any_none_of)
 
 #### Province of 2-Ranges Properties
 On 2 ranges
-- equal
-- lexicographical_compare
-- mismatch
-- is_permutation
+- [equal](https://en.cppreference.com/w/cpp/algorithm/equal)
+- [lexicographical_compare](https://en.cppreference.com/w/cpp/algorithm/lexicographical_compare)
+- [mismatch](https://en.cppreference.com/w/cpp/algorithm/mismatch)
+- [is_permutation](https://en.cppreference.com/w/cpp/algorithm/is_permutation)
 
 <Image
   alt={`Query Property on 2 Ranges`}
@@ -158,14 +159,14 @@ On 2 ranges
 Value Searchers
 
 - For not sorted
-  - find
-  - adjacent_find
+  - [find](https://en.cppreference.com/w/cpp/algorithm/find)
+  - [adjacent_find](https://en.cppreference.com/w/cpp/algorithm/adjacent_find)
 
 - For sorted
-  - equal_range
-  - lower_bound
-  - upper_bound
-  - binary_search
+  - [equal_range](https://en.cppreference.com/w/cpp/algorithm/equal_range)
+  - [lower_bound](https://en.cppreference.com/w/cpp/algorithm/lower_bound)
+  - [upper_bound](https://en.cppreference.com/w/cpp/algorithm/upper_bound)
+  - [binary_search](https://en.cppreference.com/w/cpp/algorithm/binary_search)
 
 <Image
   alt={`Searching a Value`}
@@ -175,9 +176,9 @@ Value Searchers
 />
 
 Range Searchers
-- search
-- find_end
-- find_first_of
+- [search](https://en.cppreference.com/w/cpp/algorithm/search)
+- [find_end](https://en.cppreference.com/w/cpp/algorithm/find_end)
+- [find_first_of](https://en.cppreference.com/w/cpp/algorithm/find_first_of)
 
 <Image
   alt={`Searching a Range`}
@@ -187,17 +188,17 @@ Range Searchers
 />
 
 Relative Value Searchers
-- max_element
-- min_element
+- [max_element](https://en.cppreference.com/w/cpp/algorithm/max_element)
+- [min_element](https://en.cppreference.com/w/cpp/algorithm/min_element)
 
 ### Glorious County of Algorithms on Sets
 Any sorted collection can be considered a set.
-- set_difference
-- set_intersection
-- set_union
-- set_symetric_difference
-- set_includes
-- merge
+- [set_difference](https://en.cppreference.com/w/cpp/algorithm/set_difference)
+- [set_intersection](https://en.cppreference.com/w/cpp/algorithm/set_intersection)
+- [set_union](https://en.cppreference.com/w/cpp/algorithm/set_union)
+- [set_symmetric_difference](https://en.cppreference.com/w/cpp/algorithm/set_symmetric_difference)
+- [includes](https://en.cppreference.com/w/cpp/algorithm/includes)
+- [merge](https://en.cppreference.com/w/cpp/algorithm/merge)
 
 <Image
   alt={`Algos on Sets`}
@@ -208,36 +209,36 @@ Any sorted collection can be considered a set.
 
 ### Territory of Movers
 Move things around.
-- copy
-  - copy_backward
-- move
-  - move_backward
-- swap_ranges
+- [copy](https://en.cppreference.com/w/cpp/algorithm/copy)
+  - [copy_backward](https://en.cppreference.com/w/cpp/algorithm/copy_backward)
+- [move](https://en.cppreference.com/w/cpp/algorithm/move)
+  - [move_backward](https://en.cppreference.com/w/cpp/algorithm/move_backward)
+- [swap_ranges](https://en.cppreference.com/w/cpp/algorithm/swap_ranges)
 
 ### Land of Value Modifiers
-- fill
-- iota
-- generate
-- replace
+- [fill](https://en.cppreference.com/w/cpp/algorithm/fill)
+- [iota](https://en.cppreference.com/w/cpp/algorithm/iota) (store increasing sequence)
+- [generate](https://en.cppreference.com/w/cpp/algorithm/generate)
+- [replace](https://en.cppreference.com/w/cpp/algorithm/replace)
 
 ### Island of Structure Changers
 Remember to erase the space of removed values.
-- remove
-- unique
+- [remove](https://en.cppreference.com/w/cpp/algorithm/remove)
+- [unique](https://en.cppreference.com/w/cpp/algorithm/unique)
 
 ### Lonely Islands
 Not closely related to any others in particular.
-- transform (can take 1 or 2 collections)
-- for_each (mostly should be used for side effects)
+- [transform](https://en.cppreference.com/w/cpp/algorithm/transform) (can take 1 or 2 collections)
+- [for_each](https://en.cppreference.com/w/cpp/algorithm/for_each) (mostly should be used for side effects)
 
 ### Peninsula of Raw Memory
 Use the constructor operator (instead of the assignment operator like all the others).
-- uninitialized_fill
-- uninitialized_copy
-- uninitialized_move
-- destroy
-- uninitialized_default_construct
-- uninitialized_value_construct
+- [uninitialized_fill](https://en.cppreference.com/w/cpp/memory/uninitialized_fill)
+- [uninitialized_copy](https://en.cppreference.com/w/cpp/memory/uninitialized_copy)
+- [uninitialized_move](https://en.cppreference.com/w/cpp/memory/uninitialized_move)
+- [destroy](https://en.cppreference.com/w/cpp/memory/destroy)
+- [uninitialized_default_construct](https://en.cppreference.com/w/cpp/memory/uninitialized_default_construct)
+- [uninitialized_value_construct](https://en.cppreference.com/w/cpp/memory/uninitialized_value_construct)
 
 ## Next steps
 - Use the STL algorithms to make your code more expressive.
