@@ -50,7 +50,7 @@ export default function TalkLayout({
           <LiteYouTubeEmbed
               aspectHeight = {9}
               aspectWidth = {16}
-              iframeClass = "rounded-lg"
+              wrapperClass = "yt-lite rounded-lg"
               id={post.slug}
               title={post.title}
           />
