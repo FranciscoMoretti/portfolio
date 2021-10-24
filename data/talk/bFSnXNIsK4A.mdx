@@ -3,42 +3,44 @@ title: '105 STL Algorithms in Less Than an Hour'
 publishedAt: '2020-10-23'
 ---
 
-## Table of Contents
-- [Table of Contents](#table-of-contents)
+## Table of Contents for 105 STL Algorithms
+- [Table of Contents for 105 STL Algorithms](#table-of-contents-for-105-stl-algorithms)
 - [Introduction](#introduction)
-- [105 STL Algorithms](#105-stl-algorithms)
-  - [Advantages](#advantages)
-  - [There is a world of STL algorithms](#there-is-a-world-of-stl-algorithms)
-  - [Lands and Provinces](#lands-and-provinces)
-    - [Terminology](#terminology)
-  - [Land of permutations](#land-of-permutations)
-    - [Province of Heaps](#province-of-heaps)
-    - [Shore of Sorting](#shore-of-sorting)
-    - [Region of Partitioning](#region-of-partitioning)
-    - [Other Permutations](#other-permutations)
-    - [Secret Runes](#secret-runes)
-  - [Land of Queries](#land-of-queries)
-    - [Province of Value Queries](#province-of-value-queries)
-    - [Province of Property Queries](#province-of-property-queries)
-    - [Province of 2-Ranges Properties](#province-of-2-ranges-properties)
-    - [Province of Research](#province-of-research)
-  - [Glorious County of Algorithms on Sets](#glorious-county-of-algorithms-on-sets)
-  - [Territory of Movers](#territory-of-movers)
-  - [Land of Value Modifiers](#land-of-value-modifiers)
-  - [Island of Structure Changers](#island-of-structure-changers)
-  - [Lonely Islands](#lonely-islands)
-  - [Peninsula of Raw Memory](#peninsula-of-raw-memory)
+- [Advantages](#advantages)
+- [There is a world of STL algorithms](#there-is-a-world-of-stl-algorithms)
+- [Lands and Provinces](#lands-and-provinces)
+  - [Terminology](#terminology)
+- [Land of permutations](#land-of-permutations)
+  - [Province of Heaps](#province-of-heaps)
+  - [Shore of Sorting](#shore-of-sorting)
+  - [Region of Partitioning](#region-of-partitioning)
+  - [Other Permutations](#other-permutations)
+  - [Secret Runes](#secret-runes)
+- [Land of Queries](#land-of-queries)
+  - [Province of Value Queries](#province-of-value-queries)
+  - [Province of Property Queries](#province-of-property-queries)
+    - [On 1 range](#on-1-range)
+  - [Province of 2-Ranges Properties](#province-of-2-ranges-properties)
+    - [On 2 ranges](#on-2-ranges)
+  - [Province of Research](#province-of-research)
+    - [Value Searchers](#value-searchers)
+    - [Range Searchers](#range-searchers)
+    - [Relative Value Searchers](#relative-value-searchers)
+- [Glorious County of Algorithms on Sets](#glorious-county-of-algorithms-on-sets)
+- [Territory of Movers](#territory-of-movers)
+- [Land of Value Modifiers](#land-of-value-modifiers)
+- [Island of Structure Changers](#island-of-structure-changers)
+- [Lonely Islands](#lonely-islands)
+- [Peninsula of Raw Memory](#peninsula-of-raw-memory)
 - [Next steps](#next-steps)
 
 ## Introduction
 This is an excellent talk by **Jonathan Boccara** from **CppCon 2018**. Jonathan's site [Fluent C++](https://www.fluentcpp.com/) has some resources mentioned in this talk. Not only this talk teaches ways to use the STL library, but also it shows many interesting algorithms that you might not know.
 All the algorithms mentioned in these notes have links to [C++ reference](https://en.cppreference.com/w/).
 
-
-## 105 STL Algorithms
 It's a good thing to know STL algorithms but not many people knows them all. This talk includes algorithms from C++17.
 
-### Advantages
+## Advantages
 - They make the code more expressive.
 - They avoid common mistakes.
 - They are really efficient.
@@ -48,7 +50,7 @@ It's a good thing to know STL algorithms but not many people knows them all. Thi
 
 The most common one is `for_each` but there is so much more.
 
-### There is a world of STL algorithms
+## There is a world of STL algorithms
 <Image
   alt={`World map`}
   src={`/static/images/talk/bFSnXNIsK4A/world_map_800.jpg`}
@@ -58,21 +60,21 @@ The most common one is `for_each` but there is so much more.
 
 You can get a high quality image of the map in [Fluent C++ - The World Map of C++ STL Algorithms](https://www.fluentcpp.com/getthemap/).
 
-### Lands and Provinces
+## Lands and Provinces
 The map is divided in provinces which are groups of related algorithms. Many similarities can be found in them and this topological representation helps with learning and applying them.
-#### Terminology
+### Terminology
 - Land: Group of algorithms that share a property.
 - Province: Group of algorithms in a Land that share a closer relationship.
 
-### Land of permutations
+## Land of permutations
 Elements move around the collection even if they don't change their value.
 
-#### Province of Heaps
+### Province of Heaps
 - [make_heap](https://www.cplusplus.com/reference/algorithm/make_heap/)
 - [push_heap](https://en.cppreference.com/w/cpp/algorithm/push_heap)
 - [pop_heap](https://en.cppreference.com/w/cpp/algorithm/pop_heap)
 
-#### Shore of Sorting
+### Shore of Sorting
 - [sort](https://en.cppreference.com/w/cpp/algorithm/sort)
 - [sort_heap](https://en.cppreference.com/w/cpp/algorithm/sort_heap)
 - [partial_sort](https://en.cppreference.com/w/cpp/algorithm/partial_sort)
@@ -80,11 +82,11 @@ Elements move around the collection even if they don't change their value.
 - [inplace_merge](https://en.cppreference.com/w/cpp/algorithm/inplace_merge)
 
 
-#### Region of Partitioning
+### Region of Partitioning
 - [partition](https://en.cppreference.com/w/cpp/algorithm/partition)
 - [partition_point](https://en.cppreference.com/w/cpp/algorithm/partition_point)
 
-#### Other Permutations
+### Other Permutations
 - [rotate](https://en.cppreference.com/w/cpp/algorithm/rotate)
 - [shuffle](https://en.cppreference.com/w/cpp/algorithm/random_shuffle)
 - [reverse](https://en.cppreference.com/w/cpp/algorithm/reverse)
@@ -99,7 +101,7 @@ Elements move around the collection even if they don't change their value.
   height={782}
 />
 
-#### Secret Runes
+### Secret Runes
 
 Combine them with other algorithms to create new ones. Including some algorithms from [Territory of Movers](#territory-of-movers), [Land of Value Modifiers](#land-of-value-modifiers), [Island of Structure Changers](#island-of-structure-changers) and [Peninsula of Raw Memory](#peninsula-of-raw-memory).
 - stable_*
@@ -109,10 +111,10 @@ Combine them with other algorithms to create new ones. Including some algorithms
 - is_*
 - is_*__until
 
-### Land of Queries
+## Land of Queries
 Extract some sort of value from a collection.
 
-#### Province of Value Queries
+### Province of Value Queries
 Also called Numeric Algorithms.
 
 - [count](https://en.cppreference.com/w/cpp/algorithm/count)
@@ -132,15 +134,15 @@ Also called Numeric Algorithms.
   height={780}
 />
 
-#### Province of Property Queries
+### Province of Property Queries
 
-On 1 range
+#### On 1 range
 - [all_of](https://en.cppreference.com/w/cpp/algorithm/all_any_none_of)
 - [any_of](https://en.cppreference.com/w/cpp/algorithm/all_any_none_of)
 - [none_of](https://en.cppreference.com/w/cpp/algorithm/all_any_none_of)
 
-#### Province of 2-Ranges Properties
-On 2 ranges
+### Province of 2-Ranges Properties
+#### On 2 ranges
 - [equal](https://en.cppreference.com/w/cpp/algorithm/equal)
 - [lexicographical_compare](https://en.cppreference.com/w/cpp/algorithm/lexicographical_compare)
 - [mismatch](https://en.cppreference.com/w/cpp/algorithm/mismatch)
@@ -154,9 +156,9 @@ On 2 ranges
 />
 
 
-#### Province of Research
+### Province of Research
 
-Value Searchers
+#### Value Searchers
 
 - For not sorted
   - [find](https://en.cppreference.com/w/cpp/algorithm/find)
@@ -175,7 +177,7 @@ Value Searchers
   height={780}
 />
 
-Range Searchers
+#### Range Searchers
 - [search](https://en.cppreference.com/w/cpp/algorithm/search)
 - [find_end](https://en.cppreference.com/w/cpp/algorithm/find_end)
 - [find_first_of](https://en.cppreference.com/w/cpp/algorithm/find_first_of)
@@ -187,11 +189,11 @@ Range Searchers
   height={781}
 />
 
-Relative Value Searchers
+#### Relative Value Searchers
 - [max_element](https://en.cppreference.com/w/cpp/algorithm/max_element)
 - [min_element](https://en.cppreference.com/w/cpp/algorithm/min_element)
 
-### Glorious County of Algorithms on Sets
+## Glorious County of Algorithms on Sets
 Any sorted collection can be considered a set.
 - [set_difference](https://en.cppreference.com/w/cpp/algorithm/set_difference)
 - [set_intersection](https://en.cppreference.com/w/cpp/algorithm/set_intersection)
@@ -207,7 +209,7 @@ Any sorted collection can be considered a set.
   height={778}
 />
 
-### Territory of Movers
+## Territory of Movers
 Move things around.
 - [copy](https://en.cppreference.com/w/cpp/algorithm/copy)
   - [copy_backward](https://en.cppreference.com/w/cpp/algorithm/copy_backward)
@@ -215,23 +217,23 @@ Move things around.
   - [move_backward](https://en.cppreference.com/w/cpp/algorithm/move_backward)
 - [swap_ranges](https://en.cppreference.com/w/cpp/algorithm/swap_ranges)
 
-### Land of Value Modifiers
+## Land of Value Modifiers
 - [fill](https://en.cppreference.com/w/cpp/algorithm/fill)
 - [iota](https://en.cppreference.com/w/cpp/algorithm/iota) (store increasing sequence)
 - [generate](https://en.cppreference.com/w/cpp/algorithm/generate)
 - [replace](https://en.cppreference.com/w/cpp/algorithm/replace)
 
-### Island of Structure Changers
+## Island of Structure Changers
 Remember to erase the space of removed values.
 - [remove](https://en.cppreference.com/w/cpp/algorithm/remove)
 - [unique](https://en.cppreference.com/w/cpp/algorithm/unique)
 
-### Lonely Islands
+## Lonely Islands
 Not closely related to any others in particular.
 - [transform](https://en.cppreference.com/w/cpp/algorithm/transform) (can take 1 or 2 collections)
 - [for_each](https://en.cppreference.com/w/cpp/algorithm/for_each) (mostly should be used for side effects)
 
-### Peninsula of Raw Memory
+## Peninsula of Raw Memory
 Use the constructor operator (instead of the assignment operator like all the others).
 - [uninitialized_fill](https://en.cppreference.com/w/cpp/memory/uninitialized_fill)
 - [uninitialized_copy](https://en.cppreference.com/w/cpp/memory/uninitialized_copy)
