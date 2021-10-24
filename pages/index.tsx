@@ -43,22 +43,17 @@ export default function Home({ videos }) {
             gradient="from-[#D8B4FE] to-[#818CF8]"
           />
           <BlogPostCard
-            title="Voliner - Flywheel energy storage system"
-            slug="voliner"
-            gradient="from-[#D8B4FE] to-[#818CF8]"
-          />
-          <BlogPostCard
-            title="Voliner - Flywheel energy storage system"
-            slug="voliner"
-            gradient="from-[#D8B4FE] to-[#818CF8]"
-          />
-          {/* Replace blog post 2 and 3 with the ones below once more posts are available.*/}
-          {/* <BlogPostCard
-            title="Past, Present, and Future of React State Management"
-            slug="react-state-management"
+            title="Use a Lite YouTube Embedded Player in Next.js"
+            slug="youtube-embedded-player"
             gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
           />
           <BlogPostCard
+            title="Voliner - Flywheel energy storage system"
+            slug="voliner"
+            gradient="from-[#D8B4FE] to-[#818CF8]"
+          />
+          {/* Replace blog post 3 with the ones below once more posts are available.*/}
+          {/* <BlogPostCard
             title="Which Back End Should I Use As A Front-End Developer?"
             slug="backend"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
