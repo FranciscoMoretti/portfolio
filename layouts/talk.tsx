@@ -5,6 +5,8 @@ import Container from 'components/Container';
 import ViewCounter from 'components/ViewCounter';
 import type { PropsWithChildren } from 'react';
 import type { Talk } from '.contentlayer/types';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 const editUrl = (slug) =>
   `https://github.com/FranciscoMoretti/portfolio/edit/main/data/blog/${slug}.mdx`;
@@ -44,15 +46,14 @@ export default function TalkLayout({
             <ViewCounter slug={post.slug} />
           </p>
         </div>
-        <div className=" w-full mt-4 prose dark:prose-dark max-w-none aspect-w-16 aspect-h-9">
-          <iframe
-            className="rounded-lg"
-            src={'https://www.youtube.com/embed/' + post.slug}
-            title={post.title}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <div className=" w-full mt-4 prose dark:prose-dark max-w-none">
+          <LiteYouTubeEmbed
+              aspectHeight = {9}
+              aspectWidth = {16}
+              wrapperClass = "yt-lite rounded-lg"
+              id={post.slug}
+              title={post.title}
+          />
         </div>
         <div className="w-full mt-4 prose dark:prose-dark max-w-none">
           {children}
