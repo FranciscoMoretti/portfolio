@@ -48,16 +48,10 @@ export default function Home({ videos }) {
             gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
           />
           <BlogPostCard
-            title="Voliner - Flywheel energy storage system"
-            slug="voliner"
-            gradient="from-[#D8B4FE] to-[#818CF8]"
-          />
-          {/* Replace blog post 3 with the ones below once more posts are available.*/}
-          {/* <BlogPostCard
-            title="Which Back End Should I Use As A Front-End Developer?"
-            slug="backend"
+            title="My VS Code Competitive Programming setups"
+            slug="vscode-competitive-programming"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
-          /> */}
+          />
         </div>
         <Link href="/blog">
           <a className="flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
