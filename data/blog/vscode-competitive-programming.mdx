@@ -41,3 +41,42 @@ After trying a few alternatives, I've chosen the [Competitive Programming Helper
 
 To set up all the features of the extensions you need to follow a couple of steps after installing it. I recommend the [extended user guide](https://github.com/agrawal-d/cph/blob/be2c16b67eeffa0059d42568287e87827f053e02/docs/user-guide.md) to do that process. The [Competitive Programming browser extension](https://github.com/jmerle/competitive-companion) is especially useful to connect with *CodeForces* and it's available for *Chrome* and *Firefox*.
 
+After this step, **with a single click** the [problem page](https://codeforces.com/problemset/problem/1594/E1) will used to create a **new file** and to set all the **test cases** stated in the problem.
+
+<Image
+  alt={`Input from Competitive Companion`}
+  src={`/static/images/vscode-competitive-programming/competitive_companion_connection.png`}
+  width={1920}
+  height={1040}
+/>
+
+## The programming language and setting up a template
+I've chosen `Python` as the programming language because it's the one I'm most conformable with. I've been using it for work for the past 2 years.
+
+I've found the impressive [PyRival](https://github.com/cheran-senthil/PyRival) python repository.
+It counts with a great template and also a ton of useful algorithms.
+
+To add it to your repository as a [Git submdoule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) you only need to run this command:
+```bash
+git submodule add https://github.com/cheran-senthil/PyRival
+```
+
+To fully integrate it with the setup you can add this lines to the `VS Code Workspace settings`.
+```json
+{
+  "cph.general.defaultLanguage": "python",
+  "cph.general.defaultLanguageTemplateFileLocation": "C:/your/absoulte/path/to/PyRival/templates/template_py3.py"
+}
+```
+
+After doing this and using the `Competitive Companion` extension with a new problem, the **new file** should be **created with a template**.
+
+<Image
+  alt={`Input from Competitive Companion with template`}
+  src={`/static/images/vscode-competitive-programming/competitive_companion_with_template.png`}
+  width={1920}
+  height={1040}
+/>
+
+## Usage
+That's basically it. With this setup you can easily copy problems with testcases from CodeForces to work in VS Code with your favourite programming language and solve them with all the advantages of the IDE. You can easily try the test cases locally and see the output and create new test cases. This means a huge boost in speed and a much better experience than coding the problem solutions in a website.
