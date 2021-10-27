@@ -47,7 +47,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col w-full items-center space-y-4">
+      <div className="flex flex-col w-full content-center space-y-4">
         <p className="text-gray-500">
           The backbone of this site is a fork of&nbsp;
           <ExternalLink href="https://github.com/leerob/leerob.io">
