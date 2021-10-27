@@ -17,6 +17,7 @@ export default async function handler(
   const response = await youtube.playlistItems.list({
     playlistId: 'PLeEX4sJL6yWxWPuKUS9gEl5RAqkX6e-kS',
     part: ['contentDetails', 'snippet'],
+    maxResults: 10,
   })
 
   const items = response.data.items;
