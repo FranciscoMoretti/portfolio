@@ -58,6 +58,14 @@ export default function Container(props) {
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta property="og:image" content={"https://franciscomoretti.vercel.app/static/images/banner_400.png"} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
