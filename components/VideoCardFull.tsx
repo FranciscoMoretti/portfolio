@@ -40,8 +40,21 @@ export default function VideoCardFull({ href, channel, title, index, thumbnail, 
           {notesAreAvailable &&
             <div className="flex items-center flex-row mt-2 sm:mt-0 w-full sm:w-auto justify-end	self-end">
               <p className="text-gray-500 dark:text-gray-400 text-left sm:text-right md:mb-0 mr-2 ml-10 sm:ml-0">
-                Go to the notes
+                Read the notes
               </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 text-gray-500 dark:text-gray-100"
+                viewBox="0 0 20 20"
+                stroke="currentColor"
+                >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
+                />
+              </svg>
             </div>
           }
         </div>
