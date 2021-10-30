@@ -19,7 +19,7 @@ export default function Home({ videos }) {
               <span className="font-semibold">iRobot</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              I'm a software developer, electronic engineer and roboticist. You’ve found my personal slice
+              I'm a Software Developer, electronic engineer and roboticist. You’ve found my personal slice
               of the internet – everything you want to know and more is here.
             </p>
           </div>
