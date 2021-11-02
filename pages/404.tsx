@@ -9,7 +9,7 @@ export default function NotFound() {
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           404 – The page was not found
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-gray-dark-medium dark:text-gray-light-medium mb-8">
           Whoops, this page might have existed in the past or the URL might be incorrect. You can try to check that URL
           or just navigate through the links in the home page.
         </p>

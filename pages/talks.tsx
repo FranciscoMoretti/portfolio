@@ -18,7 +18,7 @@ export default function SoftwareTalks({
           Software Talks
         </h1>
         <div className="mb-8">
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
+          <p className="text-gray-dark-medium dark:text-gray-light-medium mb-4">
             This is the list of my favourites software talks.
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function SoftwareTalks({
           target="_blank"
           rel="noopener noreferrer"
           href="https://youtube.com/playlist?list=PLeEX4sJL6yWxWPuKUS9gEl5RAqkX6e-kS"
-          className="flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
+          className="flex mt-8 text-gray-dark-medium dark:text-gray-light-medium leading-7 rounded-lg hover:text-gray-dark dark:hover:text-gray-light transition-all h-6"
         >
           Watch all videos
           <svg

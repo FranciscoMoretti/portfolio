@@ -20,11 +20,11 @@ export default function BlogPostCard({ title, slug, gradient }) {
       >
         <div className="flex flex-col justify-between h-full bg-white dark:bg-gray-900 rounded-lg p-4">
           <div className="flex flex-col md:flex-row justify-between">
-            <h4 className="text-lg md:text-lg font-medium mb-6 sm:mb-10 w-full text-gray-900 dark:text-gray-100 tracking-tight">
+            <h4 className="text-lg md:text-lg font-medium mb-6 sm:mb-10 w-full text-gray-dark dark:text-gray-light tracking-tight">
               {title}
             </h4>
           </div>
-          <div className="flex items-center text-gray-800 dark:text-gray-200 capsize">
+          <div className="flex items-center text-gray-dark-medium dark:text-gray-light-medium capsize">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"

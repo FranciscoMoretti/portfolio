@@ -12,7 +12,7 @@ export default function ProjectCard({ title, description, href, icon }) {
           <div className="h-8 w-8 ml-2 mr-4">
             <span className="sr-only">React 2025</span>
             <svg
-              className="h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100"
+              className="h-8 w-8 min-w-sm text-gray-dark dark:text-gray-light"
               viewBox="0 0 267 305"
             >
               <g fill="currentColor">
@@ -25,7 +25,7 @@ export default function ProjectCard({ title, description, href, icon }) {
           <div className="h-8 w-8 ml-2 mr-4">
             <span className="sr-only">Learn Next.js</span>
             <svg
-              className="h-8 w-8 min-w-lg text-gray-900 dark:text-gray-100"
+              className="h-8 w-8 min-w-lg text-gray-dark dark:text-gray-light"
               viewBox=".5 -.2 1023 1024.1"
             >
               <g fill="currentColor">
@@ -39,7 +39,7 @@ export default function ProjectCard({ title, description, href, icon }) {
           <div className="h-8 w-8 ml-2 mr-4">
             <span className="sr-only">Fast Feedback</span>
             <svg
-              className="h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100"
+              className="h-8 w-8 min-w-sm text-gray-dark dark:text-gray-light"
               viewBox="0 0 46 32"
             >
               <path
@@ -50,10 +50,10 @@ export default function ProjectCard({ title, description, href, icon }) {
           </div>
         )}
         <div>
-          <h4 className="text-lg font-bold tracking-tight text-gray-900 dark:text-gray-100">
+          <h4 className="text-lg font-bold tracking-tight text-gray-dark dark:text-gray-light">
             {title}
           </h4>
-          <p className="leading-5 text-gray-700 dark:text-gray-300">
+          <p className="leading-5 text-gray-dark dark:text-gray-light">
             {description}
           </p>
         </div>

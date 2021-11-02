@@ -28,7 +28,7 @@ export default function Blog({
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
-        <p className="mb-4 text-gray-600 dark:text-gray-400">
+        <p className="mb-4 text-gray-dark-medium dark:text-gray-light-medium">
           {`I've been writing online since 2014, mostly about web development and tech careers.
             In total, I've written ${posts.length} articles on this site.
             Use the search below to filter by title.`}
@@ -39,10 +39,10 @@ export default function Blog({
             type="text"
             onChange={(e) => setSearchValue(e.target.value)}
             placeholder="Search articles"
-            className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
+            className="block w-full px-4 py-2 text-gray-dark bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-light"
           />
           <svg
-            className="absolute w-5 h-5 text-gray-400 right-3 top-3 dark:text-gray-300"
+            className="absolute w-5 h-5 text-gray-light-medium right-3 top-3 dark:text-gray-light"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -60,7 +60,7 @@ export default function Blog({
           All Posts
         </h3>
         {!filteredBlogPosts.length && (
-          <p className="mb-4 text-gray-600 dark:text-gray-400">
+          <p className="mb-4 text-gray-dark-medium dark:text-gray-light-medium">
             No posts found.
           </p>
         )}

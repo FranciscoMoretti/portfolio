@@ -34,12 +34,12 @@ export default function BlogLayout({
               src="/avatar.jpg"
               className="rounded-full"
             />
-            <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <p className="ml-2 text-sm text-gray-dark dark:text-gray-light">
               {'Francisco Moretti / '}
               {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')}
             </p>
           </div>
-          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 min-w-32 md:mt-0">
+          <p className="mt-2 text-sm text-gray-dark-medium dark:text-gray-light-medium min-w-32 md:mt-0">
             {post.readingTime.text}
             {` • `}
             <ViewCounter slug={post.slug} />
@@ -49,7 +49,7 @@ export default function BlogLayout({
           {children}
         </div>
         <span className="h-16" />
-        <div className="text-sm text-gray-700 dark:text-gray-300">
+        <div className="text-sm text-gray-dark dark:text-gray-light">
           <a
             href={editUrl(post.slug)}
             target="_blank"

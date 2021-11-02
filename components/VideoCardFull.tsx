@@ -11,21 +11,21 @@ export default function VideoCardFull({ href, channel, title, index, thumbnail, 
         <div className="flex flex-col justify-between items-center h-full">
           <div className="flex flex-col items-center">
             <img width={thumbnail.width} height={thumbnail.height} src={thumbnail.url} alt="" />
-            <h4 className="youtube-video-legend text-lg font-medium w-full text-gray-800 dark:text-gray-100">
+            <h4 className="youtube-video-legend text-lg font-medium w-full text-gray-dark dark:text-gray-light">
               {title}
             </h4>
-            <div className="youtube-video-legend text-gray-300 dark:text-gray-400 text-left self-start">
+            <div className="youtube-video-legend text-gray-light dark:text-gray-light-medium text-left self-start">
               {channel}
             </div>
           </div>
           {!notesAreAvailable &&
             <div className="flex items-center flex-row mt-2 sm:mt-0 w-full sm:w-auto justify-end	self-end">
-                <p className="text-gray-500 dark:text-gray-400 text-left sm:text-right md:mb-0 mr-2 ml-10 sm:ml-0">
+                <p className="text-gray-dark-medium dark:text-gray-light-medium  text-left sm:text-right md:mb-0 mr-2 ml-10 sm:ml-0">
                   Watch on YouTube
                 </p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 text-gray-500 dark:text-gray-100"
+                  className="h-4 w-4 text-gray-dark-medium dark:text-gray-light-medium "
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -39,12 +39,12 @@ export default function VideoCardFull({ href, channel, title, index, thumbnail, 
           }
           {notesAreAvailable &&
             <div className="flex items-center flex-row mt-2 sm:mt-0 w-full sm:w-auto justify-end	self-end">
-              <p className="text-gray-500 dark:text-gray-400 text-left sm:text-right md:mb-0 mr-2 ml-10 sm:ml-0">
+              <p className="text-gray-dark-medium dark:text-gray-light-medium text-left sm:text-right md:mb-0 mr-2 ml-10 sm:ml-0">
                 Read the notes
               </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-gray-500 dark:text-gray-100"
+                className="h-4 w-4 text-gray-dark-medium dark:text-gray-light-medium "
                 viewBox="0 0 20 20"
                 stroke="currentColor"
                 >

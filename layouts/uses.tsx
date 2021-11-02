@@ -10,7 +10,7 @@ export default function UsesLayout({ children }) {
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           Things I've used
         </h1>
-        <p className="text-gray-700 dark:text-gray-300 mt-2 mb-8">
+        <p className="text-gray-dark dark:text-gray-light mt-2 mb-8">
           I love learning in the hands-on approach and trying technologies and features. Here are some of the things
           I've used and some references for myself and other readers. Extending this list is also a great motivation to
           continue experimenting with even more stuff.

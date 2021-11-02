@@ -22,7 +22,7 @@ function RenderPlaylist({data, maxItems}): JSX.Element{
 function RenderPlaylistIfReady({data, maxItems}){
   if (!data){
     return (
-      <p className="mb-4 text-gray-600 dark:text-gray-400">
+      <p className="mb-4 text-gray-dark-medium dark:text-gray-light-medium">
         Loading playlist...
       </p>
     )
