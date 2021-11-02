@@ -54,7 +54,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col w-full items-center justify-around space-y-4">
-        <p className="text-gray-dark-medium dark:text-gray-light-medium flex flex-row flex-wrap	">
+        <p className="text-gray-dark-medium dark:text-gray-light-medium flex flex-row flex-wrap
+            justify-center">
           The backbone of this site is a fork of&nbsp;
           <ExternalLink href="https://github.com/leerob/leerob.io">
             <div className="hover:text-gray-dark dark:hover:text-gray-light transition">
