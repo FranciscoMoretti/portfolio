@@ -3,7 +3,8 @@ import Link from 'next/link';
 
 const ExternalLink = ({ href, children }) => (
   <a
-    className="text-gray-500 hover:text-gray-600 transition"
+    className="text-gray-dark-medium dark:text-gray-light-medium
+                                       hover:text-gray-dark dark:hover:text-gray-light transition"
     target="_blank"
     rel="noopener noreferrer"
     href={href}
@@ -19,15 +20,18 @@ export default function Footer() {
       <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
         <div className="flex flex-col space-y-4">
           <Link href="/">
-            <a className="text-gray-500 hover:text-gray-600 transition">Home</a>
+            <a className="text-gray-dark-medium dark:text-gray-light-medium
+                hover:text-gray-dark dark:hover:text-gray-light transition">Home</a>
           </Link>
           <Link href="/about">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            <a className="text-gray-dark-medium dark:text-gray-light-medium
+                hover:text-gray-dark dark:hover:text-gray-light transition">
               About
             </a>
           </Link>
           <Link href="/blog">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            <a className="text-gray-dark-medium dark:text-gray-light-medium
+                hover:text-gray-dark dark:hover:text-gray-light transition">
               Blog
             </a>
           </Link>
@@ -40,18 +44,22 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-4">
           {/* <Link href="/uses">
-            <a className="text-gray-500 hover:text-gray-600 transition">Uses</a>
+            <a className="text-gray-dark-medium dark:text-gray-light-medium
+                hover:text-gray-dark dark:hover:text-gray-light transition">Uses</a>
           </Link> */}
           <Link href="/talks">
-            <a className="text-gray-500 hover:text-gray-600 transition">Software Talks</a>
+            <a className="text-gray-dark-medium dark:text-gray-light-medium
+                hover:text-gray-dark dark:hover:text-gray-light transition">Software Talks</a>
           </Link>
         </div>
       </div>
-      <div className="flex flex-col w-full items-center space-y-4">
-        <p className="text-gray-500">
+      <div className="flex flex-col w-full items-center justify-around space-y-4">
+        <p className="text-gray-dark-medium dark:text-gray-light-medium flex flex-row flex-wrap	">
           The backbone of this site is a fork of&nbsp;
           <ExternalLink href="https://github.com/leerob/leerob.io">
-            <a className="hover:text-gray-600 transition">leerob.io</a>
+            <div className="hover:text-gray-dark dark:hover:text-gray-light transition">
+              leerob.io
+            </div>  
           </ExternalLink>
           &nbsp;built by @leeerob.
         </p>
