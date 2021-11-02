@@ -40,17 +40,20 @@ export default function Home({ videos }) {
           <BlogPostCard
             title="Voliner - Flywheel energy storage system"
             slug="voliner"
-            gradient="from-[#D8B4FE] to-[#818CF8]"
-          />
+            gradient="from-[#12c2e9] via-[#c471ed] to-[#f7797d]" 
+            // https://uigradients.com/#JShine
+            />
           <BlogPostCard
             title="Use a Lite YouTube Embedded Player in Next.js"
             slug="youtube-embedded-player"
-            gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-          />
+            gradient="from-[#8360c3] to-[#2ebf91]"
+            // https://uigradients.com/#KyeMeh
+            />
           <BlogPostCard
             title="My VS Code Competitive Programming setups"
             slug="vscode-competitive-programming"
-            gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
+            gradient="from-[#40E0D0] via-[#FF8C00] to-[#f7797d]"
+            // https://uigradients.com/#WeddingDayBlues
           />
         </div>
         <Link href="/blog">
