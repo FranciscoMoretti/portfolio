@@ -19,7 +19,10 @@ export default function SoftwareTalks({
         </h1>
         <div className="mb-8">
           <p className="text-gray-dark-medium dark:text-gray-light-medium mb-4">
-            This is the list of my favourites software talks.
+            Tech talks is a really efficient way to top-up a developer's knowledge. In an hour or less
+            you can receive years of experience from experts in the field in a clear and entretaining. 
+            This is the curated list of my favourites software talks. Watch them on youtube and read the
+            notes I took for future reference (only available in some of them). 
           </p>
         </div>
         <div className="flex flex-col w-full">

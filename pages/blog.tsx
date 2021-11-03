@@ -29,7 +29,7 @@ export default function Blog({
           Blog
         </h1>
         <p className="mb-4 text-gray-dark-medium dark:text-gray-light-medium">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
+          {`This is a collection of some articles about coding, tools, cool projects and learning in general.
             In total, I've written ${posts.length} articles on this site.
             Use the search below to filter by title.`}
         </p>

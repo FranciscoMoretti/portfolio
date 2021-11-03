@@ -80,7 +80,7 @@ export default function Home({ videos }) {
           Latest Software Talks
         </h3>
         <p className="mb-4">
-          These are the latests videos I've added to the my list of recommended software talks.
+          These are the latests videos I've added to the curated list of my favourites tech talks. 
         </p>
         <YoutubePlaylistCompact maxItems = "4" />
         <a
