@@ -44,8 +44,8 @@ export default function Home({ videos }) {
             // https://uigradients.com/#JShine
             />
           <BlogPostCard
-            title="Use a Lite YouTube Embedded Player in Next.js"
-            slug="youtube-embedded-player"
+            title="Next.js in a VS Code development container"
+            slug="next-js-devcontainer"
             gradient="from-[#8360c3] to-[#2ebf91]"
             // https://uigradients.com/#KyeMeh
             />
