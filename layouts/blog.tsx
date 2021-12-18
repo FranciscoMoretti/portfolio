@@ -7,7 +7,7 @@ import type { PropsWithChildren } from 'react';
 import type { Blog } from '.contentlayer/types';
 
 const editUrl = (slug) =>
-  `https://github.com/FranciscoMoretti/portfolio/edit/main/data/blog/${slug}.mdx`;
+  `https://github.com/FranciscoMoretti/portfolio/edit/master/data/blog/${slug}.mdx`;
 
 export default function BlogLayout({
   children,

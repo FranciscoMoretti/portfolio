@@ -9,7 +9,7 @@ import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 const editUrl = (slug) =>
-  `https://github.com/FranciscoMoretti/portfolio/edit/main/data/blog/${slug}.mdx`;
+  `https://github.com/FranciscoMoretti/portfolio/edit/master/data/talk/${slug}.mdx`;
 
 export default function TalkLayout({
   children,
