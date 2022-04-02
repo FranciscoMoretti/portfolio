@@ -15,7 +15,7 @@ export default function Home({ videos }) {
               Francisco Moretti
             </h1>
             <h2 className="mb-4">
-              Software Developer at{' '}
+              Sr. Software Automation Engineer at{' '}
               <span className="font-semibold">iRobot</span>
             </h2>
             <p className="mb-16">
