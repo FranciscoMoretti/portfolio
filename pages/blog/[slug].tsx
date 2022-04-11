@@ -2,8 +2,7 @@ import { useMemo } from 'react';
 import { getMDXComponent } from 'mdx-bundler/client';
 import components from 'components/MDXComponents';
 import BlogLayout from 'layouts/blog';
-import { allBlogs } from '.contentlayer/data';
-import type { Blog } from '.contentlayer/types';
+import {Blog, allBlogs} from '.contentlayer/generated';
 
 export default function Blog({ post}: { post: Blog}) {
   const Component = useMemo(

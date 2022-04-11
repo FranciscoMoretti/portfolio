@@ -2,8 +2,7 @@ import { useMemo } from 'react';
 import { getMDXComponent } from 'mdx-bundler/client';
 import components from 'components/MDXComponents';
 import UsesLayout from 'layouts/uses';
-import { allOtherPages } from '.contentlayer/data';
-import type { OtherPage } from '.contentlayer/types';
+import {OtherPage, allOtherPages} from '.contentlayer/generated';
 
 export default function Uses({ body: { code } }: OtherPage) {
   const Component = useMemo(() => getMDXComponent(code), [code]);

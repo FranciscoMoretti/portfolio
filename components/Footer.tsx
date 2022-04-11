@@ -9,7 +9,7 @@ const ExternalLink = ({ href, children }) => (
     rel="noopener noreferrer"
     href={href}
   >
-    {children}
+  {children}
   </a>
 );
 
@@ -43,10 +43,10 @@ export default function Footer() {
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
-          {/* <Link href="/uses">
+          <Link href="/uses">
             <a className="text-gray-dark-medium dark:text-gray-light-medium
                 hover:text-gray-dark dark:hover:text-gray-light transition">Uses</a>
-          </Link> */}
+          </Link>
           <Link href="/talks">
             <a className="text-gray-dark-medium dark:text-gray-light-medium
                 hover:text-gray-dark dark:hover:text-gray-light transition">Software Talks</a>
@@ -57,12 +57,15 @@ export default function Footer() {
         <p className="text-gray-dark-medium dark:text-gray-light-medium flex flex-row flex-wrap
             justify-center">
           The backbone of this site is a fork of&nbsp;
-          <ExternalLink href="https://github.com/leerob/leerob.io">
-            <div className="hover:text-gray-dark dark:hover:text-gray-light transition">
-              leerob.io
-            </div>  
-          </ExternalLink>
-          &nbsp;built by @leeerob.
+        </p>
+        <ExternalLink href="https://github.com/leerob/leerob.io">
+          <div className="hover:text-gray-dark dark:hover:text-gray-light transition">
+            leerob.io
+          </div>  
+        </ExternalLink>
+        <p className="text-gray-dark-medium dark:text-gray-light-medium flex flex-row flex-wrap
+          justify-center">
+        &nbsp;built by @leeerob.
         </p>
       </div>
     </footer>
