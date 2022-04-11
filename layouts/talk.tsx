@@ -4,7 +4,7 @@ import { parseISO, format } from 'date-fns';
 import Container from 'components/Container';
 import ViewCounter from 'components/ViewCounter';
 import type { PropsWithChildren } from 'react';
-import type { Talk } from '.contentlayer/types';
+import type { Talk } from '.contentlayer/generated';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
