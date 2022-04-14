@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 import RSS from 'rss';
-import { allBlogs } from '.contentlayer/generated';
+import { allBlogPostContents } from '.contentlayer/generated';
 
 async function generate() {
   const feed = new RSS({
@@ -9,7 +9,7 @@ async function generate() {
     feed_url: 'https://franciscomoretti.vercel.app/feed.xml'
   });
 
-  allBlogs.map((post) => {
+  allBlogPostContents.map((post) => {
     feed.item({
       title: post.title,
       url: `https://franciscomoretti.vercel.app/blog/${post.slug}`,

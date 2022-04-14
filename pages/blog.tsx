@@ -4,7 +4,7 @@ import Container from 'components/Container';
 import BlogPost from 'components/BlogPost';
 import { InferGetStaticPropsType } from 'next';
 import { pick } from 'lib/utils';
-import { allBlogs } from ".contentlayer/generated";
+import { allBlogPostContents } from ".contentlayer/generated";
 
 export default function BlogMain({
   posts
@@ -73,7 +73,7 @@ export default function BlogMain({
 }
 
 export function getStaticProps() {
-  const posts = allBlogs.map((post) =>
+  const posts = allBlogPostContents.map((post) =>
     pick(post, ['slug', 'title', 'summary', 'publishedAt'])
   );
 

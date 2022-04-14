@@ -25,13 +25,13 @@ export default function BlogPage({ post}: { post: BlogPostContent}) {
 
 export async function getStaticPaths() {
   return {
-    paths: allBlogs.map((p) => ({ params: { slug: p.slug } })),
+    paths: allBlogPostContents.map((p) => ({ params: { slug: p.slug } })),
     fallback: false
   };
 }
 
 export async function getStaticProps({ params }) {
-  const post = allBlogs.find((post) => post.slug === params.slug);
+  const post = allBlogPostContents.find((post) => post.slug === params.slug);
 
   return { props: { post} };
 }
