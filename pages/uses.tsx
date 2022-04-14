@@ -2,9 +2,9 @@ import { useMemo } from 'react';
 import { getMDXComponent } from 'mdx-bundler/client';
 import components from 'components/MDXComponents';
 import UsesLayout from 'layouts/uses';
-import {OtherPage, allOtherPages} from '.contentlayer/generated';
+import {OtherPageConent, allOtherPageConents} from '.contentlayer/generated';
 
-export default function Uses({ body: { code } }: OtherPage) {
+export default function Uses({ body: { code } }: OtherPageConent) {
   const Component = useMemo(() => getMDXComponent(code), [code]);
 
   return (
@@ -15,7 +15,7 @@ export default function Uses({ body: { code } }: OtherPage) {
 }
 
 export async function getStaticProps() {
-  const uses = allOtherPages.find((page) => page.slug === 'uses')!;
+  const uses = allOtherPageConents.find((page) => page.slug === 'uses')!;
 
   return { props: uses };
 }

@@ -47,8 +47,8 @@ const TalkContent = defineDocumentType(() => ({
   computedFields
 }));
 
-const OtherPage = defineDocumentType(() => ({
-  name: 'OtherPage',
+const OtherPageConent = defineDocumentType(() => ({
+  name: 'OtherPageConent',
   filePathPattern: '*.mdx',
   contentType: 'mdx',
   fields: {
@@ -59,7 +59,7 @@ const OtherPage = defineDocumentType(() => ({
 
 const contentLayerConfig = makeSource({
   contentDirPath: 'data',
-  documentTypes: [BlogPostContent, TalkContent, OtherPage],
+  documentTypes: [BlogPostContent, TalkContent, OtherPageConent],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
