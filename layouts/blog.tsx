@@ -4,7 +4,7 @@ import { parseISO, format } from 'date-fns';
 import Container from 'components/Container';
 import ViewCounter from 'components/ViewCounter';
 import type { PropsWithChildren } from 'react';
-import type { BlogPostContent } from '.contentlayer/generated';
+import type { BlogPostContent } from 'contentlayer/generated';
 
 const editUrl = (slug) =>
   `https://github.com/FranciscoMoretti/portfolio/edit/master/data/blog/${slug}.mdx`;

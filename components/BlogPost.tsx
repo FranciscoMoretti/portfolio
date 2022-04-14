@@ -3,7 +3,7 @@ import useSWR from 'swr';
 
 import fetcher from 'lib/fetcher';
 import { Views } from 'lib/types';
-import type { BlogPostContent } from '.contentlayer/generated';
+import type { BlogPostContent } from 'contentlayer/generated';
 
 export default function BlogPost({
   title,

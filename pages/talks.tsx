@@ -2,7 +2,7 @@ import Container from 'components/Container';
 import YoutubePlaylistFull from 'components/YoutubePlaylistFull';
 import { InferGetStaticPropsType } from 'next';
 import { pick } from 'lib/utils';
-import { allTalkContents } from '.contentlayer/generated';
+import { allTalkContents } from 'contentlayer/generated';
 
 export default function SoftwareTalks({
   posts

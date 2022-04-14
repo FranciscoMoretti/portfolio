@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { getMDXComponent } from 'mdx-bundler/client';
 import components from 'components/MDXComponents';
 import TalkLayout from 'layouts/talk';
-import {TalkContent, allTalkContents } from '.contentlayer/generated';
+import {TalkContent, allTalkContents } from 'contentlayer/generated';
 
 export default function TalkContent({ post }: { post: TalkContent }) {
   const Component = useMemo(
