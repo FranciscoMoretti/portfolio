@@ -6,7 +6,7 @@ import { InferGetStaticPropsType } from 'next';
 import { pick } from 'lib/utils';
 import { allBlogs } from ".contentlayer/generated";
 
-export default function Blog({
+export default function BlogMain({
   posts
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [searchValue, setSearchValue] = useState('');

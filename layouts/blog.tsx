@@ -4,7 +4,7 @@ import { parseISO, format } from 'date-fns';
 import Container from 'components/Container';
 import ViewCounter from 'components/ViewCounter';
 import type { PropsWithChildren } from 'react';
-import type { Blog } from '.contentlayer/generated';
+import type { BlogPostContent } from '.contentlayer/generated';
 
 const editUrl = (slug) =>
   `https://github.com/FranciscoMoretti/portfolio/edit/master/data/blog/${slug}.mdx`;
@@ -12,7 +12,7 @@ const editUrl = (slug) =>
 export default function BlogLayout({
   children,
   post
-}: PropsWithChildren<{ post: Blog }>) {
+}: PropsWithChildren<{ post: BlogPostContent }>) {
   return (
     <Container
       title={`${post.title} – Francisco Moretti`}

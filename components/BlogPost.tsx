@@ -3,13 +3,13 @@ import useSWR from 'swr';
 
 import fetcher from 'lib/fetcher';
 import { Views } from 'lib/types';
-import type { Blog } from '.contentlayer/generated';
+import type { BlogPostContent } from '.contentlayer/generated';
 
 export default function BlogPost({
   title,
   summary,
   slug
-}: Pick<Blog, 'title' | 'summary' | 'slug'>) {
+}: Pick<BlogPostContent, 'title' | 'summary' | 'slug'>) {
   const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
   const views = data?.total;
 

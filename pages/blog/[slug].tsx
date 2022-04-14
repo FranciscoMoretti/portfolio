@@ -2,9 +2,9 @@ import { useMemo } from 'react';
 import { getMDXComponent } from 'mdx-bundler/client';
 import components from 'components/MDXComponents';
 import BlogLayout from 'layouts/blog';
-import {Blog, allBlogs} from '.contentlayer/generated';
+import {BlogPostContent, allBlogPostContents} from '.contentlayer/generated';
 
-export default function Blog({ post}: { post: Blog}) {
+export default function BlogPage({ post}: { post: BlogPostContent}) {
   const Component = useMemo(
     () => getMDXComponent(post.body.code),
     [post.body.code]
