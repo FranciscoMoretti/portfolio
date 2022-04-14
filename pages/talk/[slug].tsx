@@ -4,7 +4,7 @@ import components from 'components/MDXComponents';
 import TalkLayout from 'layouts/talk';
 import {TalkContent, allTalkContents } from 'contentlayer/generated';
 
-export default function TalkContent({ post }: { post: TalkContent }) {
+export default function TalkPage({ post }: { post: TalkContent }) {
   const Component = useMemo(
     () => getMDXComponent(post.body.code),
     [post.body.code]
