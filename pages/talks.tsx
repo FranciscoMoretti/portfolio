@@ -2,7 +2,7 @@ import Container from 'components/Container';
 import YoutubePlaylistFull from 'components/YoutubePlaylistFull';
 import { InferGetStaticPropsType } from 'next';
 import { pick } from 'lib/utils';
-import { allTalks } from '.contentlayer/generated';
+import { allTalkContents } from '.contentlayer/generated';
 
 export default function SoftwareTalks({
   posts
@@ -56,7 +56,7 @@ export default function SoftwareTalks({
 }
 
 export function getStaticProps() {
-  const posts = allTalks.map((post) =>
+  const posts = allTalkContents.map((post) =>
     pick(post, ['slug', 'title', 'publishedAt'])
   );
 

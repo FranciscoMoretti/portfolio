@@ -2,9 +2,9 @@ import { useMemo } from 'react';
 import { getMDXComponent } from 'mdx-bundler/client';
 import components from 'components/MDXComponents';
 import TalkLayout from 'layouts/talk';
-import {Talk, allTalks } from '.contentlayer/generated';
+import {TalkContent, allTalkContents } from '.contentlayer/generated';
 
-export default function Talk({ post }: { post: Talk }) {
+export default function TalkContent({ post }: { post: TalkContent }) {
   const Component = useMemo(
     () => getMDXComponent(post.body.code),
     [post.body.code]
@@ -25,13 +25,13 @@ export default function Talk({ post }: { post: Talk }) {
 
 export async function getStaticPaths() {
   return {
-    paths: allTalks.map((p) => ({ params: { slug: p.slug } })),
+    paths: allTalkContents.map((p) => ({ params: { slug: p.slug } })),
     fallback: false
   };
 }
 
 export async function getStaticProps({ params }) {
-  const post = allTalks.find((post) => post.slug === params.slug);
+  const post = allTalkContents.find((post) => post.slug === params.slug);
 
   return { props: { post} };
 }
