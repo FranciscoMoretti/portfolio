@@ -38,7 +38,7 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Francisco Moretti.',
+    title: 'Francisco Moretti',
     description: `Software Developer, Electronic Engineer and Roboticist.`,
     image: 'https://franciscomoretti.vercel.app/static/images/banner.png',
     type: 'website',
