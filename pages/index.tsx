@@ -29,6 +29,8 @@ export default function Home({ videos }) {
               height={176}
               width={176}
               src="/avatar.jpg"
+              placeholder='blur'
+              blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII='
               className="rounded-full filter grayscale"
             />
           </div>
