@@ -1,7 +1,7 @@
 ---
 title: 'Zero to Next.js Example with WSL2 in W11'
 publishedAt: '2022-04-16'
-summary: "How to setup your web development environment with WSL2 in Windows 11 to run a Next.js example."
+summary: "How to set up your web development environment with WSL2 in Windows 11 to run a Next.js example."
 image: '/static/images/web-dev-in-windows-11/windows_next_js_vs_code.png'
 ---
 
@@ -20,7 +20,7 @@ image: '/static/images/web-dev-in-windows-11/windows_next_js_vs_code.png'
 - A Next.js example
 
 ### Windows Requirements
-This tuturial was created in Windows 11 but you can use any of the following Windows versions:
+This tutorial  was created in Windows 11 but you can use any of the following Windows versions:
 - Windows 10 version 2004 and higher (Build 19041 and higher)
 - Windows 11
 
@@ -31,10 +31,10 @@ Simply download it from the [official site](https://code.visualstudio.com/downlo
 ### Remote - WSL extenision
 You'll also need to install the [Remote-WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) for a future step.
 
-To install an extension open the extension pannel with `ctrl+shift+X`. Search `Remote - WSL` and hit install.
+To install an extension open the extension panel with `ctrl+shift+X`. Search `Remote - WSL` and hit install.
 
 ## Windows Terminal
-Windows Terminal is a modern host application for the command-line shell. Basically it allows you to run commands in Windows. 
+Windows Terminal is a modern host application for the command-line shell. Basically, it allows you to run commands in Windows. 
 Open the Terminal by typing `Terminal` in the search bar.
 
 ## WSL2
@@ -43,8 +43,8 @@ The Windows subsystem for Linux has the following advantages:
 - You get the hardware support of Windows and the software flexibility of Linux.
 - The integration between Windows and Linux is impressive. Very few steps are required to set it up.
 - It has great performance to run web applications.
-- Most servers run linux and you want to develop and test in a similar system.
-- It keeps your host OS clean. You'll install most development dependencies in the WSL2 envionment.
+- Most servers run Linux and you want to develop and test in a similar system.
+- It keeps your host OS clean. You'll install most development dependencies in the WSL2 environment.
 
 ### Install an Ubuntu distribution with WSL 
 To install an Ubuntu distribution in WSL2 simply run the following command in PowerShell.
@@ -60,7 +60,7 @@ For additional resources check [this website](https://docs.microsoft.com/en-us/w
   height={438}
 />
 
-After a few minutes you should be able to open it in a new Terminal tab.
+After a few minutes, you should be able to open it in a new Terminal tab.
 **You will need to do a few setup steps the first time you run your WSL2 Ubuntu distribution, just follow the instructions that appear in the Ubuntu bash tab.**
 
 <Image
@@ -71,7 +71,7 @@ After a few minutes you should be able to open it in a new Terminal tab.
 />
 
 ### Set up NVM in Ubuntu
-Now paste the following commands in the Ubuntu bash tab and that should set up node with its version manager.
+Now paste the following commands in the Ubuntu bash tab and that should set up Node with its version manager.
 ```bash:Bash
 sudo apt update
 sudo apt upgrade -y
@@ -87,7 +87,7 @@ nvm install --lts
 ## Run a Next.js application
 Let's run a Next.js application to verify that everything is working and get a Next.js project started at the same time.
 
-### Create next app
+### Create Next App
 Since this is a new setup, you'll need to install `create-next-app`, but jus trying to use it for the first time will run the installation as well. Create a new application and name it `blog-app` by running the following line.
 
 ```bash:Bash
@@ -150,6 +150,6 @@ Your application should have started in http://localhost:3000/ in Windows now an
 />
 
 ## Conclusion
-This is a tutorial that set up many different tools. From Windows, to Linux though VS Code and through the Terminal. You end up with a Next.js blog application from one of the hottests framworks at the moment and with a clean setup to create other applications.
+This is a tutorial that set up many different tools. From Windows to Linux though VS Code and with the Terminal. You end up with a Next.js blog application from one of the hottest frameworks at the moment and with a clean setup to create other applications.
 
 If you want to keep learning Next.js you can use the tools from this post to try one of the [many official examples](https://nextjs.org/examples).
