@@ -98,6 +98,7 @@ html {
 
 .prose pre code {
   @apply text-gray-dark dark:text-gray-light px-0;
+  border: initial;
 }
 
 
