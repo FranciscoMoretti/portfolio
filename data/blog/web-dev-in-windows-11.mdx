@@ -1,0 +1,85 @@
+---
+title: 'Web development with WSL2 in W11'
+publishedAt: '2022-04-16'
+summary: "How to setup your web development environment with WSL2 in Windows 11."
+image: '/static/images/banner.png'
+---
+
+## Tools in this web dev environment
+- VS Code
+- WSL2 with an Ubuntu distribution
+- Node Version Manager (Node and npm)
+- Git
+- Github Cli
+- Windows Terminal
+
+
+> This tuturial was created in Windows 11 but you can use any of the following Windows versions:
+> - Windows 10 version 2004 and higher (Build 19041 and higher)
+> - Windows 11.
+
+## Install VS Code
+Simply download it from the [official site](https://code.visualstudio.com/download) and follow the install instructions.
+
+## Windows Terminal
+Windows Terminal is a modern host application for the command-line shell. Basically it allows you to run commands in Windows. 
+Open the Terminal by typing `Terminal` in the search bar.
+
+## WSL2 
+Windows subsystem for linux has the following advantages:
+- You get the hardware support of Windows and the software flexibility of Linux.
+- It's now mature enough to be used comfortably. The integration between Windows and Linux is impressive.
+- It has great performance to run web applications.
+- Most servers run linux and WSL2 lets you develop and test in a similar system.
+- It keeps your host OS clean. You'll install development dependencies in the WSL2 envionment.
+
+
+To install an Ubuntu distribution in WSL2 simply run the following command in PowerShell.
+```PowerShell:PowerShell
+wsl --install
+```
+For additional resources check [this website](https://docs.microsoft.com/en-us/windows/wsl/install).
+
+IMAGE
+
+
+After a few minutes you should be able to open it in a new Terminal tab.
+**You will need to do a few setup steps the first time you run your WSL2 Ubuntu distribution, just follow the instructions.**
+
+GIF
+
+Now paste the following commands in the Ubuntu bash tab and that should set up the rest of the things you need.
+Remember to these placheloders with your own name and email:
+- `YOUR_NAME`
+- `YOUR_NAME_ADDRESS`
+
+```Bash:Bash
+sudo apt update
+sudo apt upgrade -y
+
+## Install nvm and node
+## nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+## node
+nvm install --lts
+
+## Git
+git config --global user.name "YOUR_NAME"
+git config --global user.email "YOUR_NAME_ADDRESS"
+git config --global credential.helper cache --timeout=3600
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.last 'log -1 HEAD'
+
+## gh cli
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh -y
+gh auth login
+```
+
+
