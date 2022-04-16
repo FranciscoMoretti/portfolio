@@ -41,7 +41,7 @@ The Windows subsystem for Linux has the following advantages:
 
 ### Install an Ubuntu distribution with WSL 
 To install an Ubuntu distribution in WSL2 simply run the following command in PowerShell.
-```PowerShell:PowerShell
+```powershell:PowerShell
 wsl --install
 ```
 For additional resources check [this website](https://docs.microsoft.com/en-us/windows/wsl/install).
@@ -65,7 +65,7 @@ After a few minutes you should be able to open it in a new Terminal tab.
 
 ### Set up NVM in Ubuntu
 Now paste the following commands in the Ubuntu bash tab and that should set up node with its version manager.
-```Bash:Bash
+```bash:Bash
 sudo apt update
 sudo apt upgrade -y
 
@@ -83,7 +83,7 @@ Let's run a Next.js application to verify that everything is working and get a N
 ### Create next app
 Since this is a new setup, you'll need to install `create-next-app`, but jus trying to use it for the first time will run the installation as well. Create a new application and name it `blog-app` by running the following line.
 
-```Bash:Bash
+```bash:Bash
 npx create-next-app@latest blog-app
 ```
 You should see something like this once it's done.
@@ -99,7 +99,7 @@ You should see something like this once it's done.
 ### Open with VS Code
 Now we can open this with VS Code and close the circle. Let's tell VS Code to open the `blog-app` folder. This will install VS Code remote server and it will also open the folder directly in VS Code in Windows.
 
-```Bash:Bash
+```bash:Bash
 code blog-app
 ```
 
@@ -117,11 +117,11 @@ The result should look like the following screenshot. Note the `WSL:Ubuntu` at t
 You can now use VS Code terminal instead of the Windows terminal. To open the VS Code terminal use `ctrl+\``.
 
 First, install the dependencies
-```Bash:Bash
-npm install
+```bash:Bash
+npm i
 ```
 Then, run the server
-```Bash:Bash
+```bash:Bash
 npm run dev
 ```
 Your VS Code terminal should should indicate that the application is running now.
