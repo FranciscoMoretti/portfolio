@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://franciscomoretti.vercel.app/sitemap.xml
+Sitemap: https://franciscomoretti.com/sitemap.xml

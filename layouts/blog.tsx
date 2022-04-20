@@ -17,7 +17,7 @@ export default function BlogLayout({
     <Container
       title={`${post.title} – Francisco Moretti`}
       description={post.summary}
-      image={`https://franciscomoretti.vercel.app${post.image}`}
+      image={`https://franciscomoretti.com${post.image}`}
       date={new Date(post.publishedAt).toISOString()}
       type="article"
     >
