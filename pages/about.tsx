@@ -11,13 +11,25 @@ export default function About() {
         </h1>
         <div className="mb-8 prose leading-6 text-gray-dark-medium dark:text-gray-light-medium">
           <p>
-            Hi there! 👋 My name is Francisco Moretti. I'm a Software Developer, Electronic Engineer and Roboticist.
+            Hi there! 👋 My name is Francisco Moretti.
           </p>
           <p>
-          These days I work for {' '} <span className="font-semibold">iRobot</span> developing the next generation
-          of products that will live in millions of homes all across the world. My expertise combines electronics,
-          automation software, unit and integration testing, and several components of robot software,
-          including sensors drivers and integrations, complex behaviors, path-planning, and mapping algorithms.
+          I'm a software engineer who loves learning and lifting others while I climb. Nowadays, I automate simulations 
+          of domestic cleaning robots using Python to make sure they are helpful for people in their homes.
+          </p>
+          <p>
+          I share my journey into the world of web development and the insights I got along the way. At the moment, 
+          I'm sailing with React, Next.js, and Tailwind CSS.
+          </p>
+          <p>
+          I love creating and using tools that help programmers achieve their best work without effort. 
+          I'm a big fan of development environments and automating tasks.
+          </p>
+          <p>
+          I'm interested in clean code and great programming practices. I advocate kindness to the next reader of the code.
+          </p>
+          <p>
+          Mastering learning is the ultimate superpower, that's why I'm passionate about studying techniques and how the brain works.
           </p>
         </div>
       </div>
