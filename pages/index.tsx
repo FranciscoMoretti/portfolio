@@ -52,7 +52,7 @@ export default function Home({ videos }) {
             // https://uigradients.com/#KyeMeh
             />
           <BlogPostCard
-            title="My VS Code Competitive Programming setups"
+            title="My VS Code Competitive Programming setup"
             slug="vscode-competitive-programming"
             gradient="from-[#40E0D0] via-[#FF8C00] to-[#f7797d]"
             // https://uigradients.com/#WeddingDayBlues
