@@ -40,8 +40,8 @@ export default function Home({ videos }) {
         </h3>
         <div className="w-full flex gap-6 flex-col md:flex-row">
           <BlogPostCard
-            title="Voliner - Flywheel energy storage system"
-            slug="voliner"
+            title="Zero to Next.js Example with WSL2 in W11"
+            slug="web-dev-in-windows-11"
             gradient="from-[#12c2e9] via-[#c471ed] to-[#f7797d]" 
             // https://uigradients.com/#JShine
             />
