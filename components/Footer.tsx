@@ -41,6 +41,10 @@ export default function Footer() {
           <ExternalLink href="https://www.linkedin.com/in/francisco-moretti">
             LinkedIn
           </ExternalLink>
+          <ExternalLink href="https://twitter.com/franmoretti_">
+            Twitter
+          </ExternalLink>
+          
         </div>
         <div className="flex flex-col space-y-4">
           <Link href="/uses">
