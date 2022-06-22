@@ -19,8 +19,7 @@ export default function Home({ videos }) {
               <span className="font-semibold">iRobot</span>
             </h2>
             <p className="mb-16">
-              I'm a software developer, web development enthusiast, clean coder advocate and a lifelong learner.
-              You’ve found my personal slice of the internet. Everything you want to know and more is here.
+              I talk about web development, good programming practices, and how to learn better.
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">

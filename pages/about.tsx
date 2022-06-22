@@ -14,22 +14,21 @@ export default function About() {
             Hi there! 👋 My name is Francisco Moretti.
           </p>
           <p>
-          I'm a software engineer who loves learning and lifting others while I climb. Nowadays, I automate simulations 
-          of domestic cleaning robots using Python to make sure they are helpful for people in their homes.
+          I use Python to test robots to make sure that customers get high-quality goods.
           </p>
           <p>
-          I share my journey in the world of web development and the insights I got along the way. At the moment, 
-          I'm sailing with React, Next.js, and Tailwind CSS.
+          I share my journey in the world of web development and the insights I get along the way. 
+          At the moment, I'm working with React, Next.js, and Tailwind CSS.
           </p>
           <p>
-          I love creating and using tools that help programmers achieve their best work without effort. 
+          I like creating and using tools that make it easier for my teammates to produce their best work.
           I'm a big fan of improving development environments and automating tasks.
           </p>
           <p>
           I'm interested in clean code and great programming practices. I advocate kindness to the next reader of the code.
           </p>
           <p>
-          Mastering learning is the ultimate superpower, that's why I'm passionate about studying techniques and how the brain works.
+          The ultimate superpower is learning. That's why I'm passionate about learning strategies and how the brain functions.
           </p>
         </div>
       </div>
