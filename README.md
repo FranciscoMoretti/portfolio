@@ -1,4 +1,7 @@
-# [Portfolio](https://franciscomoretti.com/)
+### Deprecated
+My personal site was moved to https://github.com/FranciscoMoretti/franciscomoretti.com
+
+# Portfolio
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FFranciscoMoretti%2Fportfolio)
 
 # Stack
